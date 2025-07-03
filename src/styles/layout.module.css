@@ -1,0 +1,17 @@
+@reference "./globals.css";
+
+
+.html {
+  @apply h-full w-full min-h-screen overflow-hidden
+}
+.body {
+  @apply antialiased font-[family-name:var(--font-geist-sans)] h-full w-full min-h-screen [--spacer-spacing:4rem] overflow-hidden
+}
+
+.main_layout {
+  @apply flex flex-col w-full relative;
+}
+
+.navigation_block_padding {
+  @apply py-4;
+}

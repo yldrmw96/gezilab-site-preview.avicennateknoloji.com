@@ -1,0 +1,7 @@
+@reference "./globals.css";
+
+
+.navbar_bordered {
+  @apply shadow-xs border-b;
+}
+

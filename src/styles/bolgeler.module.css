@@ -1,0 +1,17 @@
+@reference "./globals.css";
+
+.bolge_section_description {
+  @apply text-balance leading-relaxed;
+}
+
+.bolge_card_heading {
+  @apply font-medium;
+}
+
+ 
+.bolgeler_list_view_layout {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 mt-2;
+}
+.bolgeler_grid_view_layout {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4;
+}

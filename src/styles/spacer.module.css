@@ -1,0 +1,7 @@
+@reference "./globals.css";
+
+.spacer_vertical {
+  @apply w-full;
+  height: var(--spacer-spacing, 1rem);
+  border: none;
+}

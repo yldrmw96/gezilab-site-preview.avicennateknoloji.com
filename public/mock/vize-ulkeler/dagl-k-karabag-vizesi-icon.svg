@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="flag-icons-tr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2A800;}
+	.st1{fill:#D90012;}
+	.st2{fill:#0033A0;}
+	.st3{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M0,0h512v512H0V0z"/>
+<path class="st1" d="M0,0h512v256H0V0z"/>
+<path class="st2" d="M0,170.7h85.3l62.6,62.6l128-128l65.4,65.4H512v170.7H341.3l-65.4,65.4l-128-128l-62.6,62.6H0V170.7z"/>
+<path class="st3" d="M512,0H341.3v56.9H256v56.9h-85.3v56.9H85.3v56.9H0v56.9h85.3v56.9h85.3v56.9H256v56.9h85.3V512H512v-56.9
+	h-85.3v-56.9h-85.3v-56.9H256v-56.9h-85.3v-56.9H256v-56.9h85.3v-56.9h85.3V56.9H512V0z"/>
+</svg>

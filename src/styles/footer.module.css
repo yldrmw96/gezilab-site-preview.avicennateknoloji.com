@@ -1,0 +1,9 @@
+@reference "./globals.css";
+
+.footer {
+  @apply flex flex-col items-center justify-center mt-auto row-start-4;
+}
+
+.footer_area {
+  @apply flex flex-col gap-4 items-center justify-center;
+}

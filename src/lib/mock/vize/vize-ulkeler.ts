@@ -1,0 +1,1324 @@
+export const vizeUlkeler = [
+  
+    {
+      "title": "Afganistan Vizesi",
+      "image": "/mock/vize-ulkeler/afganistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/afganistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Almanya Vizesi",
+      "image": "/mock/vize-ulkeler/almanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/almanya-vizesi-icon.svg",
+      "region": "Batı Avrupa"
+    },
+    {
+      "title": "Amerika Birleşik Devletleri Vizesi",
+      "image": "/mock/vize-ulkeler/amerika-birlesik-devletleri-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/amerika-birlesik-devletleri-vizesi-icon.svg",
+      "region": "Kuzey Amerika"
+    },
+    {
+      "title": "Andorra Vizesi",
+      "image": "/mock/vize-ulkeler/andorra-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/andorra-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Angola Vizesi",
+      "image": "/mock/vize-ulkeler/angola-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/angola-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Antigua ve Barbuda Vizesi",
+      "image": "/mock/vize-ulkeler/antigua-ve-barbuda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/antigua-ve-barbuda-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Arjantin Vizesi",
+      "image": "/mock/vize-ulkeler/arjantin-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/arjantin-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Arnavutluk Vizesi",
+      "image": "/mock/vize-ulkeler/arnavutluk-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/arnavutluk-vizesi-icon.svg",
+      "region": "Güney Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Avustralya Vizesi",
+      "image": "/mock/vize-ulkeler/avustralya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/avustralya-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Avusturya Vizesi",
+      "image": "/mock/vize-ulkeler/avusturya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/avusturya-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+
+    },
+    {
+      "title": "Azerbaycan Vizesi",
+      "image": "/mock/vize-ulkeler/azerbaycan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/azerbaycan-vizesi-icon.svg",
+      "region": ["Doğu Avrupa","Asya"],
+      "vizesiz": true,
+    },
+    {
+      "title": "Bahamalar Vizesi",
+      "image": "/mock/vize-ulkeler/bahamalar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/bahamalar-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Bahreyn Vizesi",
+      "image": "/mock/vize-ulkeler/bahreyn-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/bahreyn-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Bangladeş Vizesi",
+      "image": "/mock/vize-ulkeler/banglades-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/banglades-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Barbados Vizesi",
+      "image": "/mock/vize-ulkeler/barbados-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/barbados-vizesi-icon.svg", 
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Belçika Vizesi",
+      "image": "/mock/vize-ulkeler/belcika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/belcika-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+    },
+    {
+      "title": "Belize Vizesi",
+      "image": "/mock/vize-ulkeler/belize-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/belize-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Benin Vizesi",
+      "image": "/mock/vize-ulkeler/benin-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/benin-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Beyaz Rusya (Belarus) Vize",
+      "image": "/mock/vize-ulkeler/beyaz-rusya-belarus-vize-bg.jpg",
+      "icon": "/mock/vize-ulkeler/beyaz-rusya-belarus-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Birleşik Arap Emirlikleri Vizesi",
+      "image": "/mock/vize-ulkeler/birlesik-arap-emirlikleri-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/birlesik-arap-emirlikleri-vizesi-icon.svg"
+    },
+    {
+      "title": "Birleşik Krallık Virgin Adaları Vizesi",
+      "image": "/mock/vize-ulkeler/birlesik-krall-k-virgin-adalar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/birlesik-krallik-virgin-adalari-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Bolivya Vizesi",
+      "image": "/mock/vize-ulkeler/bolivya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/bolivya-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Bosna Hersek Vizesi",
+      "image": "/mock/vize-ulkeler/bosna-hersek-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/bosna-hersek-vizesi-icon.svg",
+      "region": "Güney Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Botsvana Vizesi",
+      "image": "/mock/vize-ulkeler/botsvana-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/botsvana-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Brezilya Vizesi",
+      "image": "/mock/vize-ulkeler/brezilya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/brezilya-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Brunei Vizesi",
+      "image": "/mock/vize-ulkeler/brunei-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/brunei-vizesi-icon.svg",
+      
+    },
+    {
+      "title": "Bulgaristan Vizesi",
+      "image": "/mock/vize-ulkeler/bulgaristan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/bulgaristan-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Burkina Vizesi",
+      "image": "/mock/vize-ulkeler/burkina-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/burkina-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Burma (Myanmar) Vizesi",
+      "image": "/mock/vize-ulkeler/burma-myanmar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/burma-myanmar-vizesi-icon.svg"
+    },
+    {
+      "title": "Burundi Vizesi",
+      "image": "/mock/vize-ulkeler/burundi-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/burundi-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Butan Vizesi",
+      "image": "/mock/vize-ulkeler/butan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/butan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Çad Vizesi",
+      "image": "/mock/vize-ulkeler/cad-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/cad-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Cape Verde Vizesi",
+      "image": "/mock/vize-ulkeler/cape-verde-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/cape-verde-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Çek Cumhuriyeti Vizesi",
+      "image": "/mock/vize-ulkeler/cek-cumhuriyeti-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/cek-cumhuriyeti-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Cezayir Vizesi",
+      "image": "/mock/vize-ulkeler/cezayir-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/cezayir-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Cibuti Vizesi",
+      "image": "/mock/vize-ulkeler/cibuti-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/cibuti-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Çin Vizesi",
+      "image": "/mock/vize-ulkeler/cin-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/cin-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Dağlık Karabağ Vizesi",
+      "image": "/mock/vize-ulkeler/dagl-k-karabag-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/dagl-k-karabag-vizesi-icon.svg"
+    },
+    {
+      "title": "Danimarka Vizesi",
+      "image": "/mock/vize-ulkeler/danimarka-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/danimarka-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Demokratik Kongo Vizesi",
+      "image": "/mock/vize-ulkeler/demokratik-kongo-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/demokratik-kongo-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Doğu Timor Vizesi",
+      "image": "/mock/vize-ulkeler/dogu-timor-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/dogu-timor-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Dominik Cumhuriyeti Vizesi",
+      "image": "/mock/vize-ulkeler/dominik-cumhuriyeti-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/dominik-cumhuriyeti-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Dominika Vizesi",
+      "image": "/mock/vize-ulkeler/dominika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/dominika-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Dubai Vizesi",
+      "image": "/mock/vize-ulkeler/dubai-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/dubai-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Ekvador Vizesi",
+      "image": "/mock/vize-ulkeler/ekvador-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ekvador-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Ekvator Ginesi Vizesi",
+      "image": "/mock/vize-ulkeler/ekvator-ginesi-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ekvator-ginesi-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "El Salvador Vizesi",
+      "image": "/mock/vize-ulkeler/el-salvador-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/el-salvador-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Endonezya Vizesi",
+      "image": "/mock/vize-ulkeler/endonezya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/endonezya-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Eritre Vizesi",
+      "image": "/mock/vize-ulkeler/eritre-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/eritre-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Ermenistan Vizesi",
+      "image": "/mock/vize-ulkeler/ermenistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ermenistan-vizesi-icon.svg",
+      "region": ["Doğu Avrupa","Asya"],
+      "vizesiz": true,
+    },
+    {
+      "title": "Estonya Vizesi",
+      "image": "/mock/vize-ulkeler/estonya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/estonya-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Etiyopya Vizesi",
+      "image": "/mock/vize-ulkeler/etiyopya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/etiyopya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Fas Vizesi",
+      "image": "/mock/vize-ulkeler/fas-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/fas-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Fiji Vizesi",
+      "image": "/mock/vize-ulkeler/fiji-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/fiji-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Fildişi Sahili Vizesi",
+      "image": "/mock/vize-ulkeler/fildisi-sahili-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/fildisi-sahili-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Filipinler Vizesi",
+      "image": "/mock/vize-ulkeler/filipinler-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/filipinler-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Finlandiya Vizesi",
+      "image": "/mock/vize-ulkeler/finlandiya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/finlandiya-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Fransa Vizesi",
+      "image": "/mock/vize-ulkeler/fransa-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/fransa-vizesi-icon.svg"
+    },
+    {
+      "title": "Gabon Vizesi",
+      "image": "/mock/vize-ulkeler/gabon-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gabon-vizesi-icon.svg"
+    },
+    {
+      "title": "Galler Vizesi",
+      "image": "/mock/vize-ulkeler/galler-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/galler-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+    },
+    {
+      "title": "Gambiya Vizesi",
+      "image": "/mock/vize-ulkeler/gambiya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gambiya-vizesi-icon.svg"
+    },
+    {
+      "title": "Gana Vizesi",
+      "image": "/mock/vize-ulkeler/gana-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gana-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Gine Vizesi",
+      "image": "/mock/vize-ulkeler/gine-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gine-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Gine-Bissau Vizesi",
+      "image": "/mock/vize-ulkeler/gine-bissau-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gine-bissau-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Grenada Vizesi",
+      "image": "/mock/vize-ulkeler/grenada-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/grenada-vizesi-icon.svg",
+      "region": "Kuzey Amerika"
+    },
+    {
+      "title": "Guatemala Vizesi",
+      "image": "/mock/vize-ulkeler/guatemala-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guatemala-vizesi-icon.svg",
+      "region": "Kuzey Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Güney Afrika Vizesi",
+      "image": "/mock/vize-ulkeler/guney-afrika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guney-afrika-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Güney Kore Vizesi",
+      "image": "/mock/vize-ulkeler/guney-kore-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guney-kore-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Güney Osetya Vizesi",
+      "image": "/mock/vize-ulkeler/guney-osetya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guney-osetya-vizesi-icon.svg"
+    },
+    {
+      "title": "Güney Sudan Vizesi",
+      "image": "/mock/vize-ulkeler/guney-sudan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guney-sudan-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Gürcistan Vizesi",
+      "image": "/mock/vize-ulkeler/gurcistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/gurcistan-vizesi-icon.svg",
+      "region": ["Doğu Avrupa","Asya"],
+      "vizesiz": true,
+    },
+    {
+      "title": "Guyana Vizesi",
+      "image": "/mock/vize-ulkeler/guyana-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/guyana-vizesi-icon.svg",
+      "region": "Güney Amerika"
+    },
+    {
+      "title": "Haiti Vizesi",
+      "image": "/mock/vize-ulkeler/haiti-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/haiti-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Hindistan Vizesi",
+      "image": "/mock/vize-ulkeler/hindistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/hindistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Hırvatistan Vizesi",
+      "image": "/mock/vize-ulkeler/h-rvatistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/h-rvatistan-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Hollanda Vizesi",
+      "image": "/mock/vize-ulkeler/hollanda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/hollanda-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+    },
+    {
+      "title": "Honduras Vizesi",
+      "image": "/mock/vize-ulkeler/honduras-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/honduras-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Hong Kong Vizesi",
+      "image": "/mock/vize-ulkeler/hong-kong-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/hong-kong-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "İngiltere Vizesi",
+      "image": "/mock/vize-ulkeler/ingiltere-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ingiltere-vizesi-icon.svg",
+      "region": "Batı Avrupa"
+    },
+    {
+      "title": "Irak Vizesi",
+      "image": "/mock/vize-ulkeler/irak-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/irak-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "İran Vizesi",
+      "image": "/mock/vize-ulkeler/iran-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/iran-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "İrlanda Vizesi",
+      "image": "/mock/vize-ulkeler/irlanda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/irlanda-vizesi-icon.svg",
+      "region": ["Batı Avrupa","Kuzey Avrupa"]
+    },
+    {
+      "title": "İskoçya Vizesi",
+      "image": "/mock/vize-ulkeler/iskocya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/iskocya-vizesi-icon.svg",
+      "region": "Batı Avrupa"
+    },
+    {
+      "title": "İspanya Vizesi",
+      "image": "/mock/vize-ulkeler/ispanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ispanya-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "İsrail Vizesi",
+      "image": "/mock/vize-ulkeler/israil-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/israil-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "İsveç Vizesi",
+      "image": "/mock/vize-ulkeler/isvec-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/isvec-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "İsviçre Vizesi",
+      "image": "/mock/vize-ulkeler/isvicre-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/isvicre-vizesi-icon.svg",
+      "region": "Batı Avrupa"
+    },
+    {
+      "title": "İtalya Vizesi",
+      "image": "/mock/vize-ulkeler/italya-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/italya-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "İzlanda Vizesi",
+      "image": "/mock/vize-ulkeler/izlanda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/izlanda-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Jamaika Vizesi",
+      "image": "/mock/vize-ulkeler/jamaika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/jamaika-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Japonya Vizesi",
+      "image": "/mock/vize-ulkeler/japonya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/japonya-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kamboçya Vizesi",
+      "image": "/mock/vize-ulkeler/kambocya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kambocya-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kamerun Vizesi",
+      "image": "/mock/vize-ulkeler/kamerun-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kamerun-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Kanada Vizesi",
+      "image": "/mock/vize-ulkeler/kanada-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kanada-vizesi-icon.svg",
+      "region": "Kuzey Amerika"
+    },
+    {
+      "title": "Karadağ Vizesi",
+      "image": "/mock/vize-ulkeler/karadag-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/karadag-vizesi-icon.svg",
+      "region": "Güney Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Katar Vizesi",
+      "image": "/mock/vize-ulkeler/katar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/katar-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    }
+    ,
+    {
+      "title": "Kazakistan Vizesi",
+      "image": "/mock/vize-ulkeler/kazakistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kazakistan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kenya Vizesi",
+      "image": "/mock/vize-ulkeler/kenya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kenya-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kiribati Vizesi",
+      "image": "/mock/vize-ulkeler/kiribati-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kiribati-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Kıbrıs Vizesi",
+      "image": "/mock/vize-ulkeler/k-br-s-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/k-br-s-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Kırgızistan Vizesi",
+      "image": "/mock/vize-ulkeler/k-rg-zistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kirgizistan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kolombiya Vizesi",
+      "image": "/mock/vize-ulkeler/kolombiya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kolombiya-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Komorlar Vizesi",
+      "image": "/mock/vize-ulkeler/komorlar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/komorlar-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kongo Vizesi",
+      "image": "/mock/vize-ulkeler/kongo-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kongo-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Kosova Vizesi",
+      "image": "/mock/vize-ulkeler/kosova-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/kosova-vizesi-icon.svg",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kosta Rika Vizesi",
+      "image": "/mock/vize-ulkeler/kosta-rika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kosta-rika-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Küba Vizesi",
+      "image": "/mock/vize-ulkeler/kuba-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kuba-vizesi-icon.svg",
+      "region": "Kuzey Amerika"
+    },
+    {
+      "title": "Kuveyt Vizesi",
+      "image": "/mock/vize-ulkeler/kuveyt-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kuveyt-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kuzey Kıbrıs Türk Cumhuriyeti Vizesi",
+      "image": "/mock/vize-ulkeler/kuzey-k-br-s-turk-cumhuriyeti-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kibris-cumhuriyeti-vizesi-icon.svg",
+      "vizesiz": true,
+    },
+    {
+      "title": "Kuzey Kore Vizesi",
+      "image": "/mock/vize-ulkeler/kuzey-kore-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/kuzey-kore-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Laos Vizesi",
+      "image": "/mock/vize-ulkeler/laos-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/laos-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Lesotho Vizesi",
+      "image": "/mock/vize-ulkeler/lesotho-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/lesotho-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Letonya Vizesi",
+      "image": "/mock/vize-ulkeler/letonya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/letonya-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Liberya Vizesi",
+      "image": "/mock/vize-ulkeler/liberya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/liberya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Libya Vizesi",
+      "image": "/mock/vize-ulkeler/libya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/libya-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Lihtenştayn Vizesi",
+      "image": "/mock/vize-ulkeler/lihtenstayn-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/lihtenstayn-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+    },
+    {
+      "title": "Litvanya Vizesi",
+      "image": "/mock/vize-ulkeler/litvanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/litvanya-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Lübnan Vizesi",
+      "image": "/mock/vize-ulkeler/lubnan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/lubnan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Lüksemburg Vizesi",
+      "image": "/mock/vize-ulkeler/luksemburg-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/luksemburg-vizesi-icon.svg",
+      "region": "Batı Avrupa"
+    },
+    {
+      "title": "Macaristan Vizesi",
+      "image": "/mock/vize-ulkeler/macaristan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/macaristan-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Madagaskar Vizesi",
+      "image": "/mock/vize-ulkeler/madagaskar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/madagaskar-vizesi-icon.svg",
+      "vizesiz": true,
+    },
+    {
+      "title": "Makao Özel Yönetim Bölgesi Vizesi",
+      "image": "/mock/vize-ulkeler/makao-ozel-yonetim-bolgesi-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/makao-ozel-yonetim-bolgesi.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Makedonya Vizesi",
+      "image": "/mock/vize-ulkeler/makedonya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/makedonya-vizesi-icon.svg",
+      "region": "Güney Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Malavi Vizesi",
+      "image": "/mock/vize-ulkeler/malavi-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/malavi-vizesi-icon.svg"
+    },
+    {
+      "title": "Maldivler Vizesi",
+      "image": "/mock/vize-ulkeler/maldivler-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/maldivler-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Malezya Vizesi",
+      "image": "/mock/vize-ulkeler/malezya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/malezya-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Mali Vizesi",
+      "image": "/mock/vize-ulkeler/mali-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/mali-vizesi-icon.svg"
+    },
+    {
+      "title": "Malta Vizesi",
+      "image": "/mock/vize-ulkeler/malta-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/malta-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Marşal Adaları Vizesi",
+      "image": "/mock/vize-ulkeler/marsal-adalar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/marsal-adalar-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Mauritius Vizesi",
+      "image": "/mock/vize-ulkeler/mauritius-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/mauritius-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Meksika Vizesi",
+      "image": "/mock/vize-ulkeler/meksika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/meksika-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Mikronezya Vizesi",
+      "image": "/mock/vize-ulkeler/mikronezya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/mikronezya-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Mısır Vizesi",
+      "image": "/mock/vize-ulkeler/m-s-r-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/m-sr-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Moğolistan Vizesi",
+      "image": "/mock/vize-ulkeler/mogolistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/mogolistan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Moldova Vizesi",
+      "image": "/mock/vize-ulkeler/moldova-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/moldova-vizesi-icon.svg",
+      "region": "Doğu Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Monako Vizesi",
+      "image": "/mock/vize-ulkeler/monako-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/monako-vizesi-icon.svg"
+      , "region": "Batı Avrupa"
+    },
+    {
+      "title": "Moritanya Vizesi",
+      "image": "/mock/vize-ulkeler/moritanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/moritanya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Mozambik Vizesi",
+      "image": "/mock/vize-ulkeler/mozambik-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/mozambik-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Namibya Vizesi",
+      "image": "/mock/vize-ulkeler/namibya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/namibya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Nauru Vizesi",
+      "image": "/mock/vize-ulkeler/nauru-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/nauru-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Nepal Vizesi",
+      "image": "/mock/vize-ulkeler/nepal-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/nepal-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Nijer Vizesi",
+      "image": "/mock/vize-ulkeler/nijer-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/nijer-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Nijerya Vizesi",
+      "image": "/mock/vize-ulkeler/nijerya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/nijerya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Nikaragua Vizesi",
+      "image": "/mock/vize-ulkeler/nikaragua-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/nikaragua-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Norveç Vizesi",
+      "image": "/mock/vize-ulkeler/norvec-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/norvec-vizesi-icon.svg",
+      "region": "Kuzey Avrupa"
+    },
+    {
+      "title": "Orta Afrika Vizesi",
+      "image": "/mock/vize-ulkeler/orta-afrika-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/orta-afrika-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Özbekistan Vizesi",
+      "image": "/mock/vize-ulkeler/ozbekistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ozbekistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Pakistan Vizesi",
+      "image": "/mock/vize-ulkeler/pakistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/pakistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Palau Vizesi",
+      "image": "/mock/vize-ulkeler/palau-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/palau-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Panama Vizesi",
+      "image": "/mock/vize-ulkeler/panama-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/panama-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Papua Yeni Gine Vizesi",
+      "image": "/mock/vize-ulkeler/papua-yeni-gine-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/papua-yeni-gine.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Paraguay Vizesi",
+      "image": "/mock/vize-ulkeler/paraguay-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/paraguay-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Peru Vizesi",
+      "image": "/mock/vize-ulkeler/peru-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/peru-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Polonya Vizesi",
+      "image": "/mock/vize-ulkeler/polonya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/polonya-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Portekiz Vizesi",
+      "image": "/mock/vize-ulkeler/portekiz-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/portekiz-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Romanya Vizesi",
+      "image": "/mock/vize-ulkeler/romanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/romanya-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Ruanda Vizesi",
+      "image": "/mock/vize-ulkeler/ruanda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ruanda-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Rusya Vizesi",
+      "image": "/mock/vize-ulkeler/rusya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/rusya-vizesi-icon.svg",
+      "region": ["Doğu Avrupa","Asya"]
+    },
+    {
+      "title": "Saint Kitts ve Nevis Vizesi",
+      "image": "/mock/vize-ulkeler/saint-kitts-ve-nevis-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/saint-kitts-ve-nevis-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Saint Lucia Vizesi",
+      "image": "/mock/vize-ulkeler/saint-lucia-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/saint-lucia-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Saint Vincent ve Grenadinler Vizesi",
+      "image": "/mock/vize-ulkeler/saint-vincent-ve-grenadinler-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/saint-vincent-ve-grenadinler-vizesi-icon.svg",
+      "region": "Kuzey Amerika"
+    },
+    {
+      "title": "Samoa Vizesi",
+      "image": "/mock/vize-ulkeler/samoa-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/samoa-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "San Marino Vizesi",
+      "image": "/mock/vize-ulkeler/san-marino-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/san-marino-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Sao Tome ve Principe Vizesi",
+      "image": "/mock/vize-ulkeler/sao-tome-ve-principe-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sao-tome-ve-principe-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Senegal Vizesi",
+      "image": "/mock/vize-ulkeler/senegal-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/senegal-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Seyşeller Vizesi",
+      "image": "/mock/vize-ulkeler/seyseller-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/seyseller-vizesi-icon.svg",
+      "vizesiz": true,
+    },
+    {
+      "title": "Sierra Leone Vizesi",
+      "image": "/mock/vize-ulkeler/sierra-leone-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sierra-leone-vizesi-icon.svg"
+    },
+    {
+      "title": "Şili Vizesi",
+      "image": "/mock/vize-ulkeler/sili-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sili-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Singapur Vizesi",
+      "image": "/mock/vize-ulkeler/singapur-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/singapur-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Sırbistan Vizesi",
+      "image": "/mock/vize-ulkeler/s-rbistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sirbistan-vizesi-icon.svg",
+      "region": "Güney Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Slovakya Vizesi",
+      "image": "/mock/vize-ulkeler/slovakya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/slovakya-vizesi-icon.svg",
+      "region": "Doğu Avrupa"
+    },
+    {
+      "title": "Slovenya Vizesi",
+      "image": "/mock/vize-ulkeler/slovenya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/slovenya-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Solomon Adaları Vizesi",
+      "image": "/mock/vize-ulkeler/solomon-adalar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/solomon-adalar-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Somali Vizesi",
+      "image": "/mock/vize-ulkeler/somali-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/somali-vizesi-icon.svg"
+    },
+    {
+      "title": "Sri Lanka Vizesi",
+      "image": "/mock/vize-ulkeler/sri-lanka-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sri-lanka-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Sudan Vizesi",
+      "image": "/mock/vize-ulkeler/sudan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/sudan-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Surinam Vizesi",
+      "image": "/mock/vize-ulkeler/surinam-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/surinam-vizesi-icon.svg",
+      "region": "Güney Amerika"
+    },
+    {
+      "title": "Suriye Vizesi",
+      "image": "/mock/vize-ulkeler/suriye-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/suriye-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Suudi Arabistan Vizesi",
+      "image": "/mock/vize-ulkeler/suudi-arabistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/suudi-arabistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Svaziland Vizesi",
+      "image": "/mock/vize-ulkeler/svaziland-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/svaziland-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Tacikistan Vizesi",
+      "image": "/mock/vize-ulkeler/tacikistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tacikistan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Tanzanya Vizesi",
+      "image": "/mock/vize-ulkeler/tanzanya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tanzanya-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Tayland Vizesi",
+      "image": "/mock/vize-ulkeler/tayland-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tayland-vizesi-icon.svg",  
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Tayvan Vizesi",
+      "image": "/mock/vize-ulkeler/tayvan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tayvan-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Togo Vizesi",
+      "image": "/mock/vize-ulkeler/togo-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/togo-vizesi-icon.svg",
+      "region": "Afrika"
+    },
+    {
+      "title": "Tonga Vizesi",
+      "image": "/mock/vize-ulkeler/tonga-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tonga-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Transdinyester Vizesi",
+      "image": "/mock/vize-ulkeler/transdinyester-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/transdinyester-moldova-cumhuriyeti.svg"
+    },
+    {
+      "title": "Trinidad ve Tobago Vizesi",
+      "image": "/mock/vize-ulkeler/trinidad-ve-tobago-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/trinidad-ve-tobago-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Tunus Vizesi",
+      "image": "/mock/vize-ulkeler/tunus-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tunus-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Türkiye Vizesi",
+      "image": "/mock/vize-ulkeler/turkiye-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/turkiye-vizesi-icon.svg",
+      "region": ["Doğu Avrupa","Asya"]
+    },
+    {
+      "title": "Türkmenistan Vizesi",
+      "image": "/mock/vize-ulkeler/turkmenistan-vizesi-bg.jpeg",
+      "icon": "/mock/vize-ulkeler/turkmenistan-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Turks ve Caicos Adaları Vizesi",
+      "image": "/mock/vize-ulkeler/turks-ve-caicos-adalar-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/turks-ve-caicos-adalar-vizesi-icon.svg",
+      "region": "Kuzey Amerika",
+      "vizesiz": true,
+    },
+
+    {
+      "title": "Tuvalu Vizesi",
+      "image": "/mock/vize-ulkeler/tuvalu-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/tuvalu-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Uganda Vizesi",
+      "image": "/mock/vize-ulkeler/uganda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/uganda-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Ukrayna Vizesi",
+      "image": "/mock/vize-ulkeler/ukrayna-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/ukrayna-vizesi-icon.svg",
+      "region": "Doğu Avrupa",
+      "vizesiz": true,
+    },
+    {
+      "title": "Umman Vizesi",
+      "image": "/mock/vize-ulkeler/umman-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/umman-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Ürdün Vizesi",
+      "image": "/mock/vize-ulkeler/urdun-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/urdun-vizesi-icon.svg",
+      "region": "Asya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Uruguay Vizesi",
+      "image": "/mock/vize-ulkeler/uruguay-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/uruguay-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Vanuatu Vizesi",
+      "image": "/mock/vize-ulkeler/vanuatu-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/vanuatu-vizesi-icon.svg",
+      "region": "Avustralya",
+      "vizesiz": true,
+    },
+    {
+      "title": "Vatikan Vizesi",
+      "image": "/mock/vize-ulkeler/vatikan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/vatikan-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Venezuela Vizesi",
+      "image": "/mock/vize-ulkeler/venezuela-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/venezuela-vizesi-icon.svg",
+      "region": "Güney Amerika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Vietnam Vizesi",
+      "image": "/mock/vize-ulkeler/vietnam-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/vietnam-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Yemen Vizesi",
+      "image": "/mock/vize-ulkeler/yemen-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/yemen-vizesi-icon.svg",
+      "region": "Asya"
+    },
+    {
+      "title": "Yeni Zelanda Vizesi",
+      "image": "/mock/vize-ulkeler/yeni-zelanda-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/yeni-zelanda-vizesi-icon.svg",
+      "region": "Avustralya"
+    },
+    {
+      "title": "Yunanistan Vizesi",
+      "image": "/mock/vize-ulkeler/yunanistan-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/yunanistan-vizesi-icon.svg",
+      "region": "Güney Avrupa"
+    },
+    {
+      "title": "Zambiya Vizesi",
+      "image": "/mock/vize-ulkeler/zambiya-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/zambiya-vizesi-icon.svg",
+      "region": "Afrika",
+      "vizesiz": true,
+    },
+    {
+      "title": "Zimbabve Vizesi",
+      "image": "/mock/vize-ulkeler/zimbabve-vizesi-bg.jpg",
+      "icon": "/mock/vize-ulkeler/zimbabve-vizesi-icon.svg",
+      "region": "Afrika"
+    }
+] as const;

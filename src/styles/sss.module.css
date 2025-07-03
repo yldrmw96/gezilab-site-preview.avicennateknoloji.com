@@ -1,0 +1,12 @@
+@reference "./globals.css";
+
+.sss_layout {
+  @apply flex flex-col gap-4;
+}
+
+.sss_page_title {
+  @apply text-lg font-bold;
+}
+.sss_accordion {
+  @apply w-full;
+}
