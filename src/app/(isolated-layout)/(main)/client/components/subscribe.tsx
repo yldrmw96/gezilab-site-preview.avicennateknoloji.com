@@ -11,7 +11,7 @@ const SubscribeSection = ({ stringCatalog }: { stringCatalog: any }) => {
   const [submitting, setSubmitting] = useState(true);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(`Kayıt olan e-posta: ${email}`);
+    // console.log(`Kayıt olan e-posta: ${email}`);
     // API entegrasyonu vs. buraya eklenebilir
   };
   const subscribeData = {

@@ -7,7 +7,7 @@ export async function GET(request: NextRequest) {
     if (error) {
       throw error;
     }
-    console.log(data);
+    // console.log(data);
     return NextResponse.json(data);
   } catch (error) {
     console.error(error);

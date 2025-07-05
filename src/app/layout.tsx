@@ -6,6 +6,8 @@ import styles from "@/styles/layout.module.css";
 import { cn } from "@/lib/utils";
 import type { LayoutProps } from "./layout.d";  
 
+// TODO: Geliştirme bittiğinde gereksiz fontları kaldır.
+
 const dancingScript = Dancing_Script({
   variable: "--font-dancing-script",
   subsets: ["latin"],

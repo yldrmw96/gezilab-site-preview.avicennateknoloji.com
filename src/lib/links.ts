@@ -1,12 +1,8 @@
 
 
 type Slug = string
-
 type CentralizedLinkFunction = (...args: any[]) => string
-
 type Links = Record<Slug, CentralizedLinkFunction>
-
-
 const links: Links = new Object() as Links
 
 const _ = (
@@ -15,6 +11,7 @@ const _ = (
 ) => {
   links[key] = value
 }
+export { links }
 
 _('home', () => '/')
 
@@ -35,4 +32,3 @@ _('turlar', () => '/turlar')
 _('turlarKategori', (slug: Slug) => `/turlar/kategori/${slug}`)
 _('tur', (slug: Slug) => `/tur/${slug}`)
 
-export { links }

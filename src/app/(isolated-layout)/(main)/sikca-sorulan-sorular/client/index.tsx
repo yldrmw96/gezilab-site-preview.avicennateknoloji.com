@@ -17,7 +17,7 @@ import { getStrCatalogOnce } from "@/lib/getStrCatalogOnce";
 import { localizedStringAlternate } from "@/lib/localizedStringAlternate";
 
 export default function SikcaSorulanSorularClient({ stringCatalog }: { stringCatalog: any }) {
-  console.log("stringCatalog", stringCatalog);
+  // console.log("stringCatalog", stringCatalog);
   return (
     <div className={layoutStyles.main_layout}>
       <Spacer />

@@ -6,7 +6,7 @@ const textVariants = {
     component: "p",
   },
   handwriting: {
-    classes: "text-4xl text-primary font-[family-name:var(--font-dancing-script)] font-bold",
+    classes: "text-2xl text-primary font-bold",
     component: "h3",
   },
   heading: {

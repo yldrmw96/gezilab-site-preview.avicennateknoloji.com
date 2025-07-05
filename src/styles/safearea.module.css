@@ -2,6 +2,6 @@
 
 .safe_area {
   @apply mx-auto w-full max-sm:px-4;
-  max-width: calc(var(--breakpoint-xl, 80rem /* 1280px */) + var(--ignored-safe-area, 0px));
+  max-width: calc(var(--breakpoint-lg, 64rem /* 1024px */) + var(--ignored-safe-area, 0px));
 
 }

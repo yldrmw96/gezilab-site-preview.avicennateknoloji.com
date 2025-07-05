@@ -13,7 +13,7 @@ const sidebarSlice = createSlice({
   initialState,
   reducers: {
     setShouldShowBorder: (state, action) => {
-      console.log(action.payload);
+      // console.log(action.payload);
       state.shouldShowBorder = action.payload;
     },
     setSearchQuery: (state, action) => {

@@ -35,7 +35,6 @@ import { useStringCatalog } from "@/store/hooks/string-catalog.hook"
 import { localizedStringAlternate } from "@/lib/localizedStringAlternate"
 import { useLanguage } from "@/store/hooks/language.hook"
 import { getStringCatalogSession, setStringCatalogSession, hasStringCatalogSession } from "@/lib/session-storage"
-import { flattenStringCatalog } from "@/lib/flatten-string-catalog"
 
 export default function SidebarClient({ stringCatalogFromServer, languages }: { stringCatalogFromServer: any, languages: any }) {
   const { values: { shouldShowBorder, isSidebarOpen }, actions: { setHeaderHeight, setIsSidebarOpen } } = useSidebar();
