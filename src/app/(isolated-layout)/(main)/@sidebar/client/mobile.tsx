@@ -139,7 +139,7 @@ export default function MobileMenuContent() {
       setInitialPath(pathname);
       setCurrentNavRoute(null);
     }
-    console.log(initialPath, pathname)
+    // console.log(initialPath, pathname)
   }, [pathname]);
   React.useEffect(() => {
     if (initialPath != pathname) {

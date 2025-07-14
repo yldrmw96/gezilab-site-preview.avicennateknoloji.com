@@ -24,7 +24,7 @@ export default function AnnouncementsAndCampaigns({ stringCatalog, initialData }
   return (
     <div className={styles.safe_area}>
       <div className="flex flex-col gap-2  mb-4 relative">
-        <Text variant="handwriting" className="text-balance">{localizedStringAlternate(stringCatalog, "announcements", "_root/nav")}</Text>
+        <Text variant="handwriting" className="text-balance max-sm:text-center">{localizedStringAlternate(stringCatalog, "announcements", "_root/nav")}</Text>
         <Text variant="heading" className="max-sm:text-center text-balance">{localizedStringAlternate(stringCatalog, "announcements_description", "_root")}</Text>
         <Carousel
           plugins={[plugin.current]}

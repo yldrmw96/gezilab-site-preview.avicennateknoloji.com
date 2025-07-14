@@ -22,19 +22,19 @@
 export function flattenStringCatalog(nestedData: any): any[] {
   try {
     if (!nestedData) {
-      console.warn("flattenStringCatalog: No data provided");
+      // console.warn("flattenStringCatalog: No data provided");
       return [];
     }
 
     // Nested yapıyı kontrol et
     if (nestedData._root && nestedData._root.nav && nestedData._root.nav.translations) {
-      console.log("flattenStringCatalog: Found nested structure, flattening...");
+      // console.log("flattenStringCatalog: Found nested structure, flattening...");
       return nestedData._root.nav.translations;
     }
 
     // Eğer zaten array ise direkt döndür (backward compatibility)
     if (Array.isArray(nestedData)) {
-      console.log("flattenStringCatalog: Data is already flat array");
+      // console.log("flattenStringCatalog: Data is already flat array");
       return nestedData;
     }
 
@@ -53,15 +53,15 @@ export function flattenStringCatalog(nestedData: any): any[] {
       }
       
       if (allTranslations.length > 0) {
-        console.log("flattenStringCatalog: Found multiple content groups, merged", allTranslations.length, "translations");
+        // console.log("flattenStringCatalog: Found multiple content groups, merged", allTranslations.length, "translations");
         return allTranslations;
       }
     }
 
-    console.warn("flattenStringCatalog: Unknown data structure, returning empty array");
+    // console.warn("flattenStringCatalog: Unknown data structure, returning empty array");
     return [];
   } catch (error) {
-    console.error("flattenStringCatalog error:", error);
+    // console.error("flattenStringCatalog error:", error);
     return [];
   }
 }
@@ -90,7 +90,7 @@ export function getNestedTranslations(catalog: any, path: string | string[]): an
     // Path boyunca ilerle
     for (const segment of pathArray) {
       if (!current[segment]) {
-        console.warn(`getNestedTranslations: Path segment '${segment}' not found`);
+        // console.warn(`getNestedTranslations: Path segment '${segment}' not found`);
         return [];
       }
       current = current[segment];
@@ -101,10 +101,10 @@ export function getNestedTranslations(catalog: any, path: string | string[]): an
       return current.translations;
     }
     
-    console.warn("getNestedTranslations: No translations found at path:", path);
+    // console.warn("getNestedTranslations: No translations found at path:", path);
     return [];
   } catch (error) {
-    console.error("getNestedTranslations error:", error);
+    // console.error("getNestedTranslations error:", error);
     return [];
   }
 }
@@ -120,41 +120,41 @@ export function getTranslationFromCatalog(
   contentPath?: string | string[]
 ): string {
   try {
-    console.log("getTranslationFromCatalog:", { key, langCode, contentPath, catalogKeys: catalog ? Object.keys(catalog) : 'null' });
+    // console.log("getTranslationFromCatalog:", { key, langCode, contentPath, catalogKeys: catalog ? Object.keys(catalog) : 'null' });
     
     let flatData: any[];
     
     if (contentPath) {
       // Nested path kullan
       flatData = getNestedTranslations(catalog, contentPath);
-      console.log("getTranslationFromCatalog: Using nested path:", contentPath, "Found translations:", flatData.length);
+      // console.log("getTranslationFromCatalog: Using nested path:", contentPath, "Found translations:", flatData.length);
     } else {
       // Default olarak nav kullan
       flatData = flattenStringCatalog(catalog);
-      console.log("getTranslationFromCatalog: Using default flatten, found translations:", flatData.length);
+      // console.log("getTranslationFromCatalog: Using default flatten, found translations:", flatData.length);
     }
     
     // Key'i içeren item'ı bul
     const foundItem = flatData.find((item: any) => Object.keys(item).includes(key));
     
     if (!foundItem) {
-      console.log("getTranslationFromCatalog: Key not found:", key);
+      // console.log("getTranslationFromCatalog: Key not found:", key);
       return fallback || key;
     }
     
-    console.log("getTranslationFromCatalog: Found item for key:", key, foundItem[key]);
+    // console.log("getTranslationFromCatalog: Found item for key:", key, foundItem[key]);
     
     // Dil kodunu kontrol et ve döndür
     if (foundItem[key] && foundItem[key][langCode]) {
-      console.log("getTranslationFromCatalog: Returning translation:", foundItem[key][langCode]);
+      // console.log("getTranslationFromCatalog: Returning translation:", foundItem[key][langCode]);
       return foundItem[key][langCode];
     } else {
       const trText = foundItem[key]?.["tr"] || fallback || key;
-      console.log("getTranslationFromCatalog: Returning fallback:", trText);
+      // console.log("getTranslationFromCatalog: Returning fallback:", trText);
       return trText;
     }
   } catch (error) {
-    console.error("getTranslationFromCatalog error:", error);
+    // console.error("getTranslationFromCatalog error:", error);
     return fallback || key;
   }
 } 

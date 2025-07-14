@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
   });
 
   if (error) {
-    console.error('Error fetching translations:', error);
+    // console.error('Error fetching translations:', error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
  

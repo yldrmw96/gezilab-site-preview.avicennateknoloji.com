@@ -10,14 +10,14 @@ export async function POST(request: NextRequest) {
     const { data, error } = await supabase.rpc('get_translations');
     
     if (error) {
-      console.error("Supabase hatası:", error);
+      // console.error("Supabase hatası:", error);
       return NextResponse.json({ 
         success: false, 
         error: error 
       }, { status: 500 });
     }
     
-    console.log('POST: Supabase data received, length:', Array.isArray(data) ? data.length : 'not array');
+    // console.log('POST: Supabase data received, length:', Array.isArray(data) ? data.length : 'not array');
     
     // Sadece veriyi döndür, caching client-side'da yapılacak
     return NextResponse.json({ 
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
       source: "supabase" 
     });
   } catch (error) {
-    console.error("String catalog POST hatası:", error);
+    // console.error("String catalog POST hatası:", error);
     return NextResponse.json({ 
       success: false, 
       error: error 

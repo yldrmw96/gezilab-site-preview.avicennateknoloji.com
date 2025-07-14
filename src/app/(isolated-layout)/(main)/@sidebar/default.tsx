@@ -12,7 +12,7 @@ export default async function DefaultSidebar() {
        return <SidebarClient stringCatalogFromServer={null} languages={languages} />;
      }
   } catch (error) {
-    console.error("DefaultSidebar hatası:", error);
+    // console.error("DefaultSidebar hatası:", error);
     return <div>Error</div>;
   }
 }

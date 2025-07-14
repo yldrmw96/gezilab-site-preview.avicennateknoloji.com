@@ -24,7 +24,7 @@ export default async function TurizmHaberleriPage({ params }: { params: { id: st
     .eq('name', 'tourism_news')
     .single();
   if (contentGroupError) {
-    console.error('Error fetching content group:', contentGroupError);
+    // console.error('Error fetching content group:', contentGroupError);
     return;
   }
   const { data: post, error } = await supabase

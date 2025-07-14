@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
     // console.log(data);
     return NextResponse.json(data);
   } catch (error) {
-    console.error(error);
+    // console.error(error);
     return NextResponse.json({ error: error }, { status: 500 });
   }
 }

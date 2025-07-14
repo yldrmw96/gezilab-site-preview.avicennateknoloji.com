@@ -20,9 +20,9 @@ export default function ExampleServerComponent() {
       clearStringCatalogSession();
       // Redux store'u da temizle
       setStringCatalog([]);
-      console.log("Cache temizlendi");
+      // console.log("Cache temizlendi");
     } catch (error) {
-      console.error("Cache temizleme hatası:", error);
+      // console.error("Cache temizleme hatası:", error);
     }
   };
 
@@ -42,10 +42,10 @@ export default function ExampleServerComponent() {
         // Hem store'a hem session'a kaydet
         setStringCatalog(data.data);
         setStringCatalogSession(data.data);
-        console.log("Cache yenilendi");
+        // console.log("Cache yenilendi");
       }
     } catch (error) {
-      console.error("Cache yenileme hatası:", error);
+      // console.error("Cache yenileme hatası:", error);
     }
   };
   

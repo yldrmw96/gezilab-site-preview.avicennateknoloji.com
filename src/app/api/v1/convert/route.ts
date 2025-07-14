@@ -43,7 +43,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ from: base, to: target, rate, converted });
 
   } catch (error) {
-    console.error('Convert API Error:', error);
+    // console.error('Convert API Error:', error);
     return NextResponse.json(
       { error: 'Internal Server Error' },
       { status: 500 }

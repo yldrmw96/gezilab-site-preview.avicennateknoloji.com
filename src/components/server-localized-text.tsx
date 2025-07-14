@@ -34,7 +34,7 @@ export default async function ServerLocalizedText({
     
     return <span>{fallback}</span>;
   } catch (error) {
-    console.error("ServerLocalizedText hatası:", error);
+    // console.error("ServerLocalizedText hatası:", error);
     return <span>{fallback}</span>;
   }
 } 

@@ -4,7 +4,8 @@ import { Dancing_Script, Geist, Geist_Mono, Inter, Poppins, Roboto, Nunito } fro
 import "@/styles/globals.css";
 import styles from "@/styles/layout.module.css";
 import { cn } from "@/lib/utils";
-import type { LayoutProps } from "./layout.d";  
+import type { LayoutProps } from "./layout.d";
+
 
 // TODO: Geliştirme bittiğinde gereksiz fontları kaldır.
 
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<LayoutProps>) {
- 
+
   const stringCatalog = await fetch(
     process.env.NEXT_PUBLIC_API_URL + "/api/v1/string-catalog",
     {
@@ -64,24 +65,27 @@ export default async function RootLayout({
       }),
     }
   );
- 
+
 
   return (
-    <html 
-      lang="tr" 
-      className={styles.html}
+    <html
+      lang="tr"
+      className={cn(styles.html, "relative")}
       suppressHydrationWarning
     >
-      <head>  
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <body
         className={cn(styles.body, geistSans.variable, geistMono.variable, dancingScript.variable, inter.variable, poppins.variable, roboto.variable, nunito.variable)}
       >
-        
-          {children}
-       
+
+        {children}
+
       </body>
+      <div className={"fixed grid  items-center justify-center  top-0 mt-2 left-1/2 -translate-x-1/2 w-[calc(100%-1rem)]  z-[99999] p-2 "}>
+       
+      </div>
     </html>
   );
 }

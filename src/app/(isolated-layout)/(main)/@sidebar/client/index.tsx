@@ -84,7 +84,7 @@ export default function SidebarClient({ stringCatalogFromServer, languages }: { 
             }
           })
           .catch(error => {
-            console.error('String catalog fetch hatası:', error);
+            // console.error('String catalog fetch hatası:', error);
           })
           .finally(() => {
             setIsLoading(false);

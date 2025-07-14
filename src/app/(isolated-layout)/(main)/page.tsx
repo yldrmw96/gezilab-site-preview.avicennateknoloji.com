@@ -26,7 +26,7 @@ export default async function Home() {
     .single();
 
   if (contentGroupError) {
-    console.error('Error fetching content group:', contentGroupError);
+    // console.error('Error fetching content group:', contentGroupError);
     return;
   }
 
@@ -37,7 +37,7 @@ export default async function Home() {
     .eq('group_uuid', contentGroup.uuid);
 
   if (postsError) {
-    console.error('Error fetching posts:', postsError);
+    // console.error('Error fetching posts:', postsError);
     return;
   }
 

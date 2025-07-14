@@ -30,9 +30,9 @@ const Copyright = ({ brand, className, stringCatalogFromServer, ...props }: { br
   const serviceAgreement = stringCatalogFromServer.length > 0 ? localizedStringAlternate(stringCatalogFromServer, "service_agreement") : "Hizmet Sözleşmesi";
   const privacyPolicy = stringCatalogFromServer.length > 0 ? localizedStringAlternate(stringCatalogFromServer, "privacy_policy") : "Gizlilik Sözleşmesi";
   const { values: { language } } = useLanguage();
-  console.log(language);
-  console.log(serviceAgreement);
-  console.log(privacyPolicy);
+  // console.log(language);
+  // console.log(serviceAgreement);
+  // console.log(privacyPolicy);
 return(
   <div className={cn("flex flex-row max-sm:flex-col max-sm:items-center max-sm:justify-center gap-4 items-center", className)}>
     <p className="text-xs font-medium text-gray-600 dark:text-neutral-400 text-balance">

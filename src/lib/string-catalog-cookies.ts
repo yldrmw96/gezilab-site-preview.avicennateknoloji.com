@@ -13,7 +13,7 @@ export async function getStringCatalogCookie(): Promise<any | null> {
     
     return JSON.parse(cookieValue.value);
   } catch (error) {
-    console.error("String catalog cookie okuma hatası:", error);
+    // console.error("String catalog cookie okuma hatası:", error);
     return null;
   }
 }
@@ -24,7 +24,7 @@ export async function hasStringCatalogCookie(): Promise<boolean> {
     const cookieValue = cookieStore.get(STRING_CATALOG_COOKIE_NAME);
     return !!cookieValue?.value;
   } catch (error) {
-    console.error("String catalog cookie kontrol hatası:", error);
+    // console.error("String catalog cookie kontrol hatası:", error);
     return false;
   }
 } 

@@ -19,5 +19,5 @@ function extractTemplatesData() {
 
 // Kullanımı:
 const data = extractTemplatesData();
-console.log(data);
+// console.log(data);
 

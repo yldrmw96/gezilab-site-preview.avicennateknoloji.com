@@ -10,5 +10,6 @@ export default function Providers({
 }) {
   return <Provider store={store}>
       {children}
+    
   </Provider>;
 }

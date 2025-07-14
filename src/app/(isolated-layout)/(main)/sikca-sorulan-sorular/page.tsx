@@ -18,7 +18,7 @@ import SikcaSorulanSorularClient from "./client";
 
 export default async function SikcaSorulanSorularPage() {
   const stringCatalog = await getStrCatalogOnce();
-  console.log("stringCatalog", stringCatalog);
+  // console.log("stringCatalog", stringCatalog);
   return (
     <SikcaSorulanSorularClient stringCatalog={stringCatalog} />
   );
