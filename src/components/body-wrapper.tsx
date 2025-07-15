@@ -2,12 +2,10 @@
 import { useDispatch } from "react-redux";
 import { setShouldShowBorder } from "@/store/reducers/sidebar.reducer";
 import { useCallback, useRef } from "react";
-import { useSidebar } from "@/store/hooks/sidebar.hook";
-import { SearchCommand } from "./search-command";
+
 
 export default function BodyWrapper({ children }: { children: React.ReactNode }) {
   const dispatch = useDispatch();
-  const { values: { isSearchOpen, isSidebarOpen } } = useSidebar();
   // Önceki durumu sakla
   const shouldShowBorderRef = useRef(false);
 
@@ -27,10 +25,10 @@ export default function BodyWrapper({ children }: { children: React.ReactNode })
       onScroll={handleScroll}
       className="grid grid-rows-[auto_1fr_auto] h-full w-full min-h-screen overflow-y-auto overflow-x-hidden relative"
     >
-  
+
       {children}
-  
-    
+
+
     </main>
   );
 }

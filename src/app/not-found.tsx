@@ -12,13 +12,13 @@ export default function NotFound() {
       </div>
 
       <p className="max-w-md opacity-80">
-        Gezilab'da (neredeyse) her şeyi bulabilirsiniz — görünüşe göre var olmayan bir sayfayı bile. 
+        Gezilab&apos;da (neredeyse) her şeyi bulabilirsiniz — görünüşe göre var olmayan bir sayfayı bile.
         Belki diğer sayfalarımız sizi yeni keşiflere götürebilir?
       </p>
       <Button asChild className="text-sm py-2 h-auto leading-none">
         <Link href="/">Ana Sayfa</Link>
       </Button>
-      
+
     </div>
   );
 }

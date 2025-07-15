@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { setShouldShowBorder } from "@/store/reducers/sidebar.reducer";
 import { useCallback, useRef } from "react";
 
-export default function PageLayout({ children, sidebar, footer, topbar }: { children: React.ReactNode, sidebar: React.ReactNode, footer: React.ReactNode, topbar: React.ReactNode }) {
+export default function PageLayout({ children, sidebar, footer }: { children: React.ReactNode, sidebar: React.ReactNode, footer: React.ReactNode }) {
   const dispatch = useDispatch();
 
   const shouldShowBorderRef = useRef(false);
@@ -21,9 +21,9 @@ export default function PageLayout({ children, sidebar, footer, topbar }: { chil
   return (
     <main
       onScroll={handleScroll}
-      className="grid grid-rows-[auto_1fr_auto] h-full w-full min-h-screen overflow-y-auto overflow-x-hidden relative"
+      className="grid grid-rows-[auto_1fr_auto] h-full w-full min-h-screen overflow-y-auto relative"
     >
-      
+
       {sidebar}
 
 

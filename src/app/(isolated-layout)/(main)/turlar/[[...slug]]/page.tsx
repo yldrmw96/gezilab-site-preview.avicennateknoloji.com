@@ -1,8 +1,7 @@
 import React from "react";
 import TurlarClient from "./client";
-import { notFound } from "next/navigation";
 
-export default async function TurlarPageServer({ params }: { params: { slug: string[] } }) {
+export default async function TurlarPageServer({ params }: { params: Promise<{ slug: string[] }> }) {
   const { slug } = await params;
 
   const catchCategory = (params: unknown) => {
@@ -12,7 +11,7 @@ export default async function TurlarPageServer({ params }: { params: { slug: str
     return kategori;
   }
 
-  const kategori =  catchCategory(slug) || null;
+  const kategori = catchCategory(slug) || null;
   // console.log(kategori)
   // if (kategori === null) {
   //   return notFound();

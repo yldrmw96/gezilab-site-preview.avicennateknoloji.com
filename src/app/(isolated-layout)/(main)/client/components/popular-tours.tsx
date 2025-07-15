@@ -64,63 +64,25 @@ const tours = [
   },
 ];
 
-const TourCard = ({ tour }: { tour: typeof tours[number] }) => (
-  <div className="col-xl-3 col-lg-4 col-md-6">
-    <div className="tour-card">
-      <div className="tour-card__img">
-        <img src={tour.image} alt="Tur Görseli" />
-        <span className="tour-card__tag">
-          <i className="far fa-heart"></i>
-        </span>
-      </div>
-      <div className="tour-card__content">
-        <div className="tour-card__top">
-          <a href="https://www.google.com/maps" className="tour-card__location">
-            <i className="fa-light fa-location-dot"></i> {tour.location}
-          </a>
-          <div className="tour-card__rating">
-            {[...Array(5)].map((_, i) => (
-              <i key={i} className="fa-solid fa-star-sharp"></i>
-            ))}
-          </div>
-        </div>
-        <h3 className="tour-card__title">
-          <a href={tour.link}>{tour.title}</a>
-        </h3>
-        <div className="tour-meta">
-          <span><i className="fa-light fa-clock"></i> {tour.duration}</span>
-          <span><i className="fa-light fa-user-group"></i> {tour.participants}</span>
-        </div>
-        <div className="tour-card__bottom">
-          <span className="tour-card__price">
-            Başlangıç: <span className="price">{tour.price}</span>
-          </span>
-          <a href={tour.link} className="link-btn">
-            Detayları Gör <i className="fas fa-arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 const PopularToursSection = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false })
   )
   return (
-    <section className="relative">
+    <section className={cn(styles.safe_area, "relative")}>
       <div className="absolute inset-0 w-full h-full bg-cover bg-center z-1 grid grid-cols-3" >
-        <div className="col-span-1 bg-cover bg-center col-start-3" style={{ backgroundImage: "url('/img/bg/tour_bg_1.jpg')" ,
+        <div className="col-span-1 bg-cover bg-center col-start-3" style={{
+          backgroundImage: "url('/img/bg/tour_bg_1.jpg')",
           mask: "linear-gradient(90deg, transparent , black 108%,black 90%)"
         }}>
 
         </div>
       </div>
 
-      <div className={cn(styles.safe_area,"relative z-2")}>
-        <div className="flex flex-row justify-between items-end mb-10">
-          <div className="title-area text-start text-lg-start flex flex-col gap-4">
+      <div className={cn("relative z-2")}>
+        <div className="flex flex-col justify-center items-center mb-10">
+          <div className="text-center flex flex-col items-center gap-2 mb-10">
             <Text variant="handwriting">Öne Çıkan Turlar</Text>
             <Text variant="heading">En Popüler Turlar</Text>
           </div>
@@ -149,11 +111,11 @@ const PopularToursSection = () => {
         >
           <CarouselContent className="-ml-1">
             {tours.map((tour, index) => (
-              <CarouselItem key={index} className="basis-1/4">
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 shrink-0">
                 <div className="p-1">
                   <Link href={`/tur/${tour.id}`}>
                     <Card className="shadow-xs rounded-4xl shining-card overflow-hidden p-0 gap-4 hover:scale-[1.02] transition-all hover:duration-100 duration-300 cursor-pointer">
-                      <CardContent className="flex h-[2rem] items-center justify-center p-6 relative overflow-hidden h-[12rem] rounded-t-4xl">
+                      <CardContent className="flex items-center justify-center p-6 relative overflow-hidden h-[12rem] rounded-t-4xl">
                         <Image src={tour.image} alt={tour.title} fill className="object-cover" />
                       </CardContent>
                       <CardFooter className="flex mb-2 flex-col gap-2">
@@ -175,9 +137,9 @@ const PopularToursSection = () => {
                         <Text variant="title" className="text-left me-auto">{tour.title}</Text>
                         <div className="flex flex-row w-full items-center justify-between">
                           <div className="flex flex-row gap-2 items-center justify-center">
-                            <ClockIcon width={"1em"} height={"1em"} className="text-primary" /> 
+                            <ClockIcon width={"1em"} height={"1em"} className="text-primary" />
                             <Text variant="paragraph">{tour.duration}</Text>
-                    
+
                           </div>
                           <div className="flex flex-row gap-2 items-center justify-center">
                             <UsersRound width={"1em"} height={"1em"} className="text-primary" />

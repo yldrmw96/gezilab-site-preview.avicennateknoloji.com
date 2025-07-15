@@ -1,6 +1,6 @@
 /**
  * Nested string catalog yapısını düz array'e çevirir
- * 
+ *
  * Input:
  * {
  *   "_root": {
@@ -12,7 +12,7 @@
  *     }
  *   }
  * }
- * 
+ *
  * Output:
  * [
  *   { "about": { "tr": "Hakkımızda", "en": "About" } },
@@ -39,19 +39,19 @@ export function flattenStringCatalog(nestedData: any): any[] {
     }
 
     // Diğer nested yapıları da kontrol et
-    if (typeof nestedData === 'object') {
+    if (typeof nestedData === "object") {
       // _root altındaki tüm content group'ları topla
       const allTranslations: any[] = [];
-      
+
       if (nestedData._root) {
-        Object.keys(nestedData._root).forEach(groupKey => {
+        Object.keys(nestedData._root).forEach((groupKey) => {
           const group = nestedData._root[groupKey];
           if (group && group.translations && Array.isArray(group.translations)) {
             allTranslations.push(...group.translations);
           }
         });
       }
-      
+
       if (allTranslations.length > 0) {
         // console.log("flattenStringCatalog: Found multiple content groups, merged", allTranslations.length, "translations");
         return allTranslations;
@@ -61,7 +61,7 @@ export function flattenStringCatalog(nestedData: any): any[] {
     // console.warn("flattenStringCatalog: Unknown data structure, returning empty array");
     return [];
   } catch (error) {
-    // console.error("flattenStringCatalog error:", error);
+    console.error("flattenStringCatalog error:", error);
     return [];
   }
 }
@@ -79,14 +79,14 @@ export function getNestedTranslations(catalog: any, path: string | string[]): an
 
     let current = catalog;
     let pathArray: string[];
-    
-    if (typeof path === 'string') {
+
+    if (typeof path === "string") {
       // "_root/nav" formatından path array'i çıkar
-      pathArray = path.split('/');
+      pathArray = path.split("/");
     } else {
       pathArray = path;
     }
-    
+
     // Path boyunca ilerle
     for (const segment of pathArray) {
       if (!current[segment]) {
@@ -95,16 +95,16 @@ export function getNestedTranslations(catalog: any, path: string | string[]): an
       }
       current = current[segment];
     }
-    
+
     // Son seviyede translations var mı kontrol et
     if (current && current.translations && Array.isArray(current.translations)) {
       return current.translations;
     }
-    
+
     // console.warn("getNestedTranslations: No translations found at path:", path);
     return [];
   } catch (error) {
-    // console.error("getNestedTranslations error:", error);
+    console.error("getNestedTranslations error:", error);
     return [];
   }
 }
@@ -113,17 +113,17 @@ export function getNestedTranslations(catalog: any, path: string | string[]): an
  * String catalog'dan belirli bir key'in çevirisini alır
  */
 export function getTranslationFromCatalog(
-  catalog: any, 
-  key: string, 
-  langCode: string = "tr", 
+  catalog: any,
+  key: string,
+  langCode: string = "tr",
   fallback?: string,
   contentPath?: string | string[]
 ): string {
   try {
     // console.log("getTranslationFromCatalog:", { key, langCode, contentPath, catalogKeys: catalog ? Object.keys(catalog) : 'null' });
-    
+
     let flatData: any[];
-    
+
     if (contentPath) {
       // Nested path kullan
       flatData = getNestedTranslations(catalog, contentPath);
@@ -133,17 +133,17 @@ export function getTranslationFromCatalog(
       flatData = flattenStringCatalog(catalog);
       // console.log("getTranslationFromCatalog: Using default flatten, found translations:", flatData.length);
     }
-    
+
     // Key'i içeren item'ı bul
     const foundItem = flatData.find((item: any) => Object.keys(item).includes(key));
-    
+
     if (!foundItem) {
       // console.log("getTranslationFromCatalog: Key not found:", key);
       return fallback || key;
     }
-    
+
     // console.log("getTranslationFromCatalog: Found item for key:", key, foundItem[key]);
-    
+
     // Dil kodunu kontrol et ve döndür
     if (foundItem[key] && foundItem[key][langCode]) {
       // console.log("getTranslationFromCatalog: Returning translation:", foundItem[key][langCode]);
@@ -154,7 +154,7 @@ export function getTranslationFromCatalog(
       return trText;
     }
   } catch (error) {
-    // console.error("getTranslationFromCatalog error:", error);
+    console.error("getTranslationFromCatalog error:", error);
     return fallback || key;
   }
-} 
+}

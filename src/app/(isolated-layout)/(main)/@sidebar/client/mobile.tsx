@@ -3,13 +3,12 @@ import * as React from "react"
 import Link from "next/link";
 import { useSidebar } from "@/store/hooks/sidebar.hook";
 import { Button } from "@/components/ui/button";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { LayoutGroup, AnimatePresence, motion } from "framer-motion";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { kesfetRoutes } from "@/lib/mock/navigation-menu/kesfet";
-import { useTransition } from "react";
 import { usePathname } from "next/navigation";
-import { allCountries, visas } from "@/lib/mock/navigation-menu/visas"
+import { visas } from "@/lib/mock/navigation-menu/visas"
 import { kurumsalSeyahatRoutes } from "@/lib/mock/navigation-menu/kurumsal-seyahat"
 import { sirketRoutes } from "@/lib/mock/navigation-menu/sirket"
 import { MapPinIcon } from "lucide-react";
@@ -145,7 +144,7 @@ export default function MobileMenuContent() {
     if (initialPath != pathname) {
       setIsSidebarOpen(false);
     }
-  }, [pathname, initialPath]);
+  }, [pathname]);
   return (
     <div className="w-full h-full flex flex-col items-start justify-center gap-4 relative overflow-hidden">
       <LayoutGroup>
@@ -267,7 +266,7 @@ export default function MobileMenuContent() {
                         layoutId={child.id}
                         className="text-2xl font-bold cursor-pointer py-4"
                       >
-                        <Link href={`${child.path}`} className="flex items-center gap-2 font-medium text-primary !leading-none ">
+                        <Link href={`${child.id}`} className="flex items-center gap-2 font-medium text-primary !leading-none ">
                           {child.title}
                         </Link>
                       </motion.div>

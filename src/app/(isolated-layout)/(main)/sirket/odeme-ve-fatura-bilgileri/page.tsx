@@ -2,15 +2,14 @@ import Spacer from "@/components/spacer";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/safearea.module.css";
 import Text from "@/components/text";
-import { 
-  CreditCardIcon, 
-  BuildingIcon, 
-  FileTextIcon, 
-  ShieldCheckIcon, 
+import {
+  CreditCardIcon,
+  BuildingIcon,
+  ShieldCheckIcon,
   ClipboardCheckIcon,
   ArrowRightIcon
 } from "lucide-react";
-import { 
+import {
   Table,
   TableBody,
   TableCell,
@@ -82,7 +81,7 @@ export default function OdemeVeFaturaBilgileriPage() {
           <Text variant="handwriting">Finans</Text>
           <Text variant="heading">Ödeme ve Fatura Bilgileri</Text>
           <Text variant="paragraph" className="max-w-2xl mt-2">
-            Gezilab olarak, müşterilerimize güvenli ve çeşitli ödeme seçenekleri sunmaktayız. 
+            Gezilab olarak, müşterilerimize güvenli ve çeşitli ödeme seçenekleri sunmaktayız.
             Fatura bilgileri ve ödeme yöntemleri hakkında detaylı bilgiye bu sayfadan ulaşabilirsiniz.
           </Text>
         </div>
@@ -93,7 +92,7 @@ export default function OdemeVeFaturaBilgileriPage() {
             <TabsTrigger value="bank">Banka Hesapları</TabsTrigger>
             <TabsTrigger value="invoice">Fatura Bilgileri</TabsTrigger>
           </TabsList>
-          
+
           {/* Ödeme Yöntemleri */}
           <TabsContent value="payment">
             <div className="bg-white p-6 rounded-xl shadow-sm border">
@@ -110,19 +109,19 @@ export default function OdemeVeFaturaBilgileriPage() {
                   </div>
                 ))}
               </div>
-              
+
               <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
                 <h3 className="font-semibold mb-2">Ödeme Güvenliği</h3>
                 <p className="text-sm text-gray-700">
-                  Tüm ödeme işlemleriniz 128-bit SSL sertifikası ile korunmaktadır. 
+                  Tüm ödeme işlemleriniz 128-bit SSL sertifikası ile korunmaktadır.
                   Kredi kartı bilgileriniz şifrelenmiş olarak iletilir ve sistemlerimizde saklanmaz.
                 </p>
               </div>
-              
+
               <div className="mt-6">
                 <h3 className="font-semibold mb-2">Taksit Seçenekleri</h3>
                 <p className="text-sm text-gray-700 mb-4">
-                  Anlaşmalı bankalarımız aracılığıyla kredi kartlarına 3, 6 ve 9 taksit imkanı sunmaktayız. 
+                  Anlaşmalı bankalarımız aracılığıyla kredi kartlarına 3, 6 ve 9 taksit imkanı sunmaktayız.
                   Tur paketleri ve özel kampanyalarda farklı taksit seçenekleri olabilir.
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -133,17 +132,17 @@ export default function OdemeVeFaturaBilgileriPage() {
               </div>
             </div>
           </TabsContent>
-          
+
           {/* Banka Hesapları */}
           <TabsContent value="bank">
             <div className="bg-white p-6 rounded-xl shadow-sm border">
               <div className="mb-4">
                 <p className="text-sm text-gray-700 mb-2">
-                  Havale/EFT ile yapacağınız ödemelerde açıklama kısmına rezervasyon numaranızı belirtmeyi unutmayınız. 
+                  Havale/EFT ile yapacağınız ödemelerde açıklama kısmına rezervasyon numaranızı belirtmeyi unutmayınız.
                   Ödemeniz yapıldıktan sonra dekontunuzu <Link href="mailto:finans@gezilab.com" className="text-primary hover:underline">finans@gezilab.com</Link> adresine gönderebilirsiniz.
                 </p>
               </div>
-              
+
               <div className="overflow-auto">
                 <Table>
                   <TableHeader>
@@ -172,18 +171,18 @@ export default function OdemeVeFaturaBilgileriPage() {
               </div>
             </div>
           </TabsContent>
-          
+
           {/* Fatura Bilgileri */}
           <TabsContent value="invoice">
             <div className="bg-white p-6 rounded-xl shadow-sm border">
               <div className="mb-6">
                 <h3 className="font-semibold mb-2">Fatura Düzenleme</h3>
                 <p className="text-sm text-gray-700">
-                  Bireysel müşterilerimize seyahat hizmeti faturası, kurumsal müşterilerimize ise firmanın talep ettiği fatura bilgilerine göre fatura düzenlenmektedir. 
+                  Bireysel müşterilerimize seyahat hizmeti faturası, kurumsal müşterilerimize ise firmanın talep ettiği fatura bilgilerine göre fatura düzenlenmektedir.
                   Tüm faturalarımız elektronik fatura (e-fatura/e-arşiv) olarak düzenlenmektedir.
                 </p>
               </div>
-              
+
               <div className="mb-6">
                 <h3 className="font-semibold mb-2">Kurumsal Fatura Bilgisi Gönderimi</h3>
                 <p className="text-sm text-gray-700">
@@ -196,7 +195,7 @@ export default function OdemeVeFaturaBilgileriPage() {
                   <li>Web Sitesi: <Link href="/bize-ulasin" className="text-primary hover:underline">İletişim Formu</Link></li>
                 </ul>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-slate-50 p-4 rounded-lg">
                   <h3 className="font-semibold mb-2">Bireysel Fatura Bilgileri</h3>
@@ -215,7 +214,7 @@ export default function OdemeVeFaturaBilgileriPage() {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-slate-50 p-4 rounded-lg">
                   <h3 className="font-semibold mb-2">Kurumsal Fatura Bilgileri</h3>
                   <ul className="text-sm space-y-2">
@@ -238,7 +237,7 @@ export default function OdemeVeFaturaBilgileriPage() {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                 <h3 className="font-semibold mb-2 text-yellow-800">Önemli Bilgilendirme</h3>
                 <p className="text-sm text-yellow-800">
@@ -249,7 +248,7 @@ export default function OdemeVeFaturaBilgileriPage() {
             </div>
           </TabsContent>
         </Tabs>
-        
+
         <div className=" p-8 rounded-xl mt-8 mb-4 text-center">
           <Text variant="subheading" className="mb-2">Ödeme Desteği İçin</Text>
           <p className="text-gray-700 mb-4">Ödeme işlemleri veya fatura konusunda yardıma ihtiyacınız olursa bizimle iletişime geçebilirsiniz.</p>

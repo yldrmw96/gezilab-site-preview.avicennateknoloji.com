@@ -59,7 +59,7 @@ export default function Visas() {
   )
   return (
     <div className={styles.safe_area}>
-      
+
       <Carousel
         plugins={[plugin.current]}
         opts={{
@@ -74,7 +74,7 @@ export default function Visas() {
       >
         <CarouselContent className="-ml-1">
           {visas.map((visa, index) => (
-            <CarouselItem key={index} className="pl-1 basis-1/4 md:basis-1/4">
+            <CarouselItem key={index} className="pl-1 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/5">
               <div className="p-1">
                 <Card className="shadow-xs rounded-4xl relative overflow-hidden p-0 gap-0">
                   <CardContent className="bg-accent flex aspect-square items-center justify-center p-6 relative overflow-hidden  h-[12rem]">
@@ -83,9 +83,9 @@ export default function Visas() {
 
 
 
-                      <div className="absolute bottom-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-2 ">
-                        <Text variant="heading" className="text-white text-xl mb-3 font-bold mt-auto">{visa.title}</Text>
-                      </div>
+                    <div className="absolute bottom-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-2 ">
+                      <Text variant="heading" className="text-white text-xl mb-3 font-bold mt-auto">{visa.title}</Text>
+                    </div>
 
                   </CardContent>
                 </Card>
@@ -94,7 +94,7 @@ export default function Visas() {
           ))}
         </CarouselContent>
         <CarouselPrevious />
-        <CarouselNext />  
+        <CarouselNext />
       </Carousel>
     </div>
   );

@@ -33,15 +33,15 @@ export function LanguageSelector({ languages }: { languages: any }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="p-0  flex items-center justify-center my-auto w-auto h-full !gap-[var(--service-icon-gap)]">
-            <GlobeIcon className="w-[1em] h-[1em] text-primary" /> 
-          <span className="text-sm">{getLanguageLabel(language)}</span> 
+        <Button variant="outline" className="p-0  flex items-center justify-center my-auto w-auto h-full !gap-[var(--service-icon-gap)]">
+          <GlobeIcon className="w-[1em] h-[1em] text-primary" />
+          <span className="text-sm">{getLanguageLabel(language)}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-  
-        <DropdownMenuRadioGroup value={language?.code} onValueChange={(value) => setLanguage(languages.find(language => language.code === value) || languages[0])}>
-          {languages.map((language) => (
+
+        <DropdownMenuRadioGroup value={language?.code} onValueChange={(value) => setLanguage(languages.find((language: any) => language.code === value) || languages[0])}>
+          {languages.map((language: any) => (
             <DropdownMenuRadioItem key={language.code} value={language.code}>{language.name}</DropdownMenuRadioItem>
           ))}
         </DropdownMenuRadioGroup>

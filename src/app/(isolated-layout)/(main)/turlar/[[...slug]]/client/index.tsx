@@ -34,7 +34,7 @@ import { mockTurlar } from "@/lib/mock/turlar";
 import { normalizePrice } from "../utils";
 import { links } from "@/lib/links";
 
-  
+
 const TurCard = ({ tur }: { tur: typeof mockTurlar[number] }) => (
   <Link href={links.tur(tur.id)}>
     <Card className="group rounded-4xl overflow-hidden transition-all duration-300 hover:-translate-y-1 !p-0 shadow-none border-none cursor-pointer shining-card-capturer">
@@ -269,7 +269,7 @@ export default function TurlarClient({ kategori }: { kategori: string | null }) 
       <Banner_09 />
       <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
         {/* Sol Sidebar - Desktop */}
-        <aside className="pt-8 hidden lg:flex flex-col space-y-6 overflow-y-auto  sticky " style={{ maxHeight: `calc(100vh - ${headerHeight}px)`, top: `calc(${headerHeight}px ` }}>
+        <aside className="pt-8 hidden lg:flex flex-col space-y-6 overflow-y-auto sticky px-2" style={{ maxHeight: `calc(100vh - ${headerHeight}px)`, top: `calc(${headerHeight}px ` }}>
           <FilterContent />
 
           {/* İletişim Kartı */}
@@ -358,7 +358,7 @@ export default function TurlarClient({ kategori }: { kategori: string | null }) 
                         </div>
                       </div>
                       <Separator className="lg:hidden" />
-                      <FilterContent /> 
+                      <FilterContent />
                     </div>
                   </SheetContent>
                 </Sheet>

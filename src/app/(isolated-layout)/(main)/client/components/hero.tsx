@@ -1,14 +1,14 @@
 "use client"
 import { SearchCommand } from "@/components/search-command";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, BedIcon, PlaneTakeoffIcon } from "lucide-react";
+import { ArrowRightIcon, PlaneTakeoffIcon } from "lucide-react";
 import Image from "next/image";
 import styles from "@/styles/safearea.module.css";
 import { cn } from "@/lib/utils";
-import { localizedStringAlternate } from "@/lib/localizedStringAlternate";
+import { useLocalizedStringAlternate } from "@/lib/localizedStringAlternate";
 export default function Hero({ stringCatalog }: { stringCatalog: any }) {
-  return (  
-    <div className={cn(styles.safe_area, "flex flex-col items-center justify-center h-full shrink-0 grow border rounded-4xl border bg-muted !h-[35rem] overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-1 hero-radial-gradient !max-w-screen-2xl")}>
+  return (
+    <div className={cn(styles.safe_area, "flex flex-col items-center justify-center shrink-0 grow rounded-4xl border bg-muted !h-[35rem] overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-1 hero-radial-gradient !max-w-screen-2xl")}>
       <div className="absolute bottom-0 right-0 w-full h-full">
         <Image src="/hero_bg_2_1.jpg" alt="Hero Image" fill className="object-cover w-full h-full max-sm:object-right" />
       </div>
@@ -57,7 +57,7 @@ export default function Hero({ stringCatalog }: { stringCatalog: any }) {
           height={180}
         />
 
-       
+
       </div>
 
       <div className="absolute z-2 bottom-0 left-120 ">
@@ -76,25 +76,25 @@ export default function Hero({ stringCatalog }: { stringCatalog: any }) {
 
       <div className="grid grid-cols-2 z-2  max-sm:grid-cols-1 w-full h-full max-w-screen-xl">
         <div className="flex flex-col gap-4 items-start justify-center h-full shrink-0 grow" >
-          <span className="text-white font-[family-name:var(--font-dancing-script)] text-2xl font-bold">{localizedStringAlternate(stringCatalog, "slogan", "_root")}</span>
-          <h1 className="text-4xl font-bold text-white">{localizedStringAlternate(stringCatalog, "hero_title", "_root")}</h1>
+          <span className="text-white font-[family-name:var(--font-dancing-script)] text-2xl font-bold">{useLocalizedStringAlternate(stringCatalog, "slogan", "_root")}</span>
+          <h1 className="text-4xl font-bold text-white">{useLocalizedStringAlternate(stringCatalog, "hero_title", "_root")}</h1>
           {/* <p className="text-white font-bold">Müşterilerimize seyahat ederken mümkün olan en fazla seçeneği sunarak mutlu etmeyi hedefliyoruz.
           </p> */}
           <SearchCommand stringCatalog={stringCatalog} />
 
           <div className="gap-4 items-start justify-start grid grid-cols-2 w-full" >
-          
+
             <Button size="lg" className="font-bold flex flex-row items-center justify-center col-span-1 row-start-2" >
 
               <span className="text-white">
-                {localizedStringAlternate(stringCatalog, "tours", "_root/nav")}
+                {useLocalizedStringAlternate(stringCatalog, "tours", "_root/nav")}
               </span>
               <PlaneTakeoffIcon className="w-4 h-4" />
 
             </Button>
-            <Button size="lg" variant="ghost" className="bg-white text-primary font-bold flex flex-row items-center justify-center col-span-1 row-start-2 hover:bg-white/90 cursor-pointer !text-primary" >
+            <Button size="lg" variant="ghost" className="bg-white font-bold flex flex-row items-center justify-center col-span-1 row-start-2 hover:bg-white/90 cursor-pointer !text-primary" >
               <span >
-                {localizedStringAlternate(stringCatalog, "get_contact", "_root/nav")}
+                {useLocalizedStringAlternate(stringCatalog, "get_contact", "_root/nav")}
               </span>
               <ArrowRightIcon />
             </Button>

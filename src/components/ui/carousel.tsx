@@ -157,7 +157,7 @@ type CarouselItemProps = React.ComponentProps<"div"> & {
   reset?: boolean
 }
 
-function CarouselItem({ className,reset, ...props }: CarouselItemProps) {
+function CarouselItem({ className, reset, ...props }: CarouselItemProps) {
   const { orientation } = useCarousel()
 
   return (
@@ -181,7 +181,7 @@ function CarouselPrevious({
   size = "icon",
   customIcon,
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<typeof Button> & { customIcon?: React.ReactNode }) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
@@ -212,7 +212,7 @@ function CarouselNext({
   size = "icon",
   customIcon,
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<typeof Button> & { customIcon?: React.ReactNode }) {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (

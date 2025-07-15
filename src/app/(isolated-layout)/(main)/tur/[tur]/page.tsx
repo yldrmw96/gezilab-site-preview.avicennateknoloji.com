@@ -10,10 +10,10 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
- import { 
-  CalendarIcon, 
-  MapPinIcon, 
-  UsersIcon, 
+import {
+  CalendarIcon,
+  MapPinIcon,
+  UsersIcon,
   ClockIcon,
   StarIcon,
   CheckIcon,
@@ -21,15 +21,13 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
   PhoneIcon,
   ShareIcon,
   HeartIcon,
-  ImageIcon,
   InfoIcon,
   ChevronRightIcon
 } from "lucide-react";
-import { useSidebar } from "@/store/hooks/sidebar.hook";
-import Link from "next/link";
+
 import ImageCarouselBasic, {
-  CarouselImages,
 } from "@/components/commerce-ui/image-carousel-basic";
+import Link from "next/link";
 
 // Mock tur detayları
 const mockTurDetay = {
@@ -46,7 +44,7 @@ const mockTurDetay = {
   reviewCount: 128,
   images: [
     "/img/trip/tour_1_1.jpg",
-    "/img/trip/tour_1_2.jpg", 
+    "/img/trip/tour_1_2.jpg",
     "/img/trip/tour_1_3.jpg",
     "/img/trip/tour_1_4.jpg",
     "/img/trip/tour_1_5.jpg"
@@ -102,9 +100,7 @@ const mockTurDetay = {
   ]
 };
 
-export default function TurPage({ params }: { params: { tur: string } }) {
-  const { values: { headerHeight } } = useSidebar();
-  const [selectedImage, setSelectedImage] = useState(0);
+export default function TurPage() {
   const [isFavorite, setIsFavorite] = useState(false);
 
   return (
@@ -136,14 +132,14 @@ export default function TurPage({ params }: { params: { tur: string } }) {
         <div className="space-y-4">
 
           <div className="relative shinning-capturer rounded-3xl overflow-hidden">
-            
+
             <ImageCarouselBasic
-             images={mockTurDetay.images.map((image: string) => ({
-              title: mockTurDetay.title,
-              url: image,
-            }))} 
-            imageFit="cover"
-            aspectRatio="square"
+              images={mockTurDetay.images.map((image: string) => ({
+                title: mockTurDetay.title,
+                url: image,
+              }))}
+              imageFit="cover"
+              aspectRatio="square"
 
             />
 
@@ -170,8 +166,8 @@ export default function TurPage({ params }: { params: { tur: string } }) {
               </Badge>
             )}
           </div>
-          
-       
+
+
         </div>
 
         {/* Tur Bilgileri */}
@@ -246,7 +242,7 @@ export default function TurPage({ params }: { params: { tur: string } }) {
                   Son 5 koltuk!
                 </Badge>
               </div>
-              
+
               <div className="space-y-3">
                 <Button className="w-full" size="lg">
                   <CalendarIcon className="w-5 h-5 mr-2" />
@@ -283,26 +279,26 @@ export default function TurPage({ params }: { params: { tur: string } }) {
       {/* Detaylı Bilgiler */}
       <Tabs defaultValue="program" className="w-full max-sm:flex-col">
         <TabsList className="w-full justify-start !flex-wrap h-auto p-0 bg-transparent border-b rounded-none overflow-x-auto  max-sm:flex-col">
-          <TabsTrigger 
-            value="program" 
+          <TabsTrigger
+            value="program"
             className="rounded-none !border-t-0 !border-l-0 border-r-0 border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-3 md:px-6 py-3 whitespace-nowrap"
           >
             Tur Programı
           </TabsTrigger>
-          <TabsTrigger 
-            value="included" 
+          <TabsTrigger
+            value="included"
             className="rounded-none !border-t-0 !border-l-0 border-r-0 border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-3 md:px-6 py-3 whitespace-nowrap"
           >
             Dahil Olanlar
           </TabsTrigger>
-          <TabsTrigger 
-            value="info" 
+          <TabsTrigger
+            value="info"
             className="rounded-none !border-t-0 !border-l-0 border-r-0 border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-3 md:px-6 py-3 whitespace-nowrap"
           >
             Önemli Bilgiler
           </TabsTrigger>
-          <TabsTrigger 
-            value="reviews" 
+          <TabsTrigger
+            value="reviews"
             className="rounded-none !border-t-0 !border-l-0 border-r-0 border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-3 md:px-6 py-3 whitespace-nowrap"
           >
             Yorumlar ({mockTurDetay.reviewCount})
@@ -389,7 +385,7 @@ export default function TurPage({ params }: { params: { tur: string } }) {
               <div>
                 <h4 className="font-semibold mb-2">Notlar</h4>
                 <p className="text-sm text-muted-foreground">
-                  Tur programı, hava koşulları ve müze kapalı günleri nedeniyle değişiklik gösterebilir. 
+                  Tur programı, hava koşulları ve müze kapalı günleri nedeniyle değişiklik gösterebilir.
                   Rehberimiz gerekli durumlarda program değişikliği yapma hakkına sahiptir.
                 </p>
               </div>
@@ -421,8 +417,8 @@ export default function TurPage({ params }: { params: { tur: string } }) {
                         <span className="text-sm w-3">{rating}</span>
                         <StarIcon className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                         <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
-                          <div 
-                            className="h-full bg-yellow-400" 
+                          <div
+                            className="h-full bg-yellow-400"
                             style={{ width: rating === 5 ? '85%' : rating === 4 ? '10%' : rating === 3 ? '3%' : rating === 2 ? '1%' : '1%' }}
                           />
                         </div>

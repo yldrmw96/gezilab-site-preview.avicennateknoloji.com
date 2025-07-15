@@ -1,7 +1,7 @@
 @reference "./globals.css";
 
 .safe_area {
-  @apply mx-auto w-full max-sm:px-4;
-  max-width: calc(var(--breakpoint-lg, 64rem /* 1024px */) + var(--ignored-safe-area, 0px));
+  @apply mx-auto w-full max-sm:px-4 max-w-screen-xl;
+
 
 }

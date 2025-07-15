@@ -10,7 +10,12 @@ import { cn } from "@/lib/utils";
 import { getStrCatalogOnce } from "@/lib/getStrCatalogOnce";
 import { createClient } from "@/lib/supabase/server";
 import { cookies } from "next/headers";
-import { sanitizeHTML } from "@/lib/utils/blog-helper-functions.server";
+import Visas from "./client/components/visas";
+import Features2 from "./client/components/features-2";
+import { DestinationCategories } from "./client/components/destination-categories";
+import AboutUs from "./client/components/about-us";
+import PopularDestinations from "./client/components/popular-destinations";
+import PopularToursSection from "./client/components/popular-tours";
 
 export default async function Home() {
   const stringCatalog = await getStrCatalogOnce();
@@ -41,37 +46,36 @@ export default async function Home() {
     return;
   }
 
-  const { data: announcements, error: announcementsError } = await supabase
+  const { data: announcements } = await supabase
     .from('post')
     .select('*')
     .eq('group_uuid', "70d57f0c-7946-4bc1-bf94-27a8aee9ce7d");
 
   // console.log(announcements);
   return (
-    <div className={cn(layoutStyles.main_layout)}> 
+    <div className={cn(layoutStyles.main_layout)}>
       <Hero stringCatalog={stringCatalog} />
       <Spacer />
-      {/* <Visas />
-      <Spacer /> */}
-      {/* <Features2 /> */}
-      {/* <Spacer />
+      <Visas />
+      <Spacer />
+      <Features2 />
+      <Spacer />
       <DestinationCategories />
-      <Spacer /> */}
-      {/* <AboutUs /> */}
-      {/* <Spacer />
+      <Spacer />
+      <AboutUs />
+      <Spacer />
       <PopularDestinations />
- 
-      <Spacer /> */}
-      {/* <PopularTours /> */}
-      {/* <Spacer /> */}
+      <Spacer />
+      <PopularToursSection />
+      <Spacer />
       <Subscribe stringCatalog={stringCatalog} />
       <Spacer />
-      <AnnouncementsAndCampaigns 
-      initialData={{
-        tourism_news: tourism_news,
-        announcements: announcements,
-      }}
-      stringCatalog={stringCatalog} />
+      <AnnouncementsAndCampaigns
+        initialData={{
+          tourism_news: tourism_news,
+          announcements: announcements,
+        }}
+        stringCatalog={stringCatalog} />
     </div>
   );
 }

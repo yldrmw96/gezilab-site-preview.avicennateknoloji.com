@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import styles from "@/styles/safearea.module.css";
 export default function Hizmet() {
   return (
-    <div className={cn(styles.safe_area, "[&_p]:pb-4 [&_b]:font-bold [&_b]:text-lg text-sm leading-relaxed [&_p:has(b)]:mt-8 text-balance  [&_ol]:list-inside [&_ol]:space-y-4 [&_li[role='heading']]:mt-8 [&_li[role='heading']]:mt-8")}>
+    <div className={cn(styles.safe_area, "[&_p]:pb-4 [&_b]:font-bold [&_b]:text-lg text-sm leading-relaxed [&_p:has(b)]:mt-8 text-balance  [&_ol]:list-inside [&_ol]:space-y-4 [&_li[role='heading']]:mt-8")}>
       <ol>
         <li role="heading" aria-level={2}>Sözleşme Tarafları</li>
         <li >
@@ -14,7 +14,7 @@ export default function Hizmet() {
         </li>
         <li role="heading" aria-level={2}>I - ÖDEMELER</li>
         <li >
-          Gezilab'ın yurtdışı gezilerine kayıt yapılırken toplam ücretin % 40'ı ön
+          Gezilab&apos;ın yurtdışı gezilerine kayıt yapılırken toplam ücretin % 40&apos;ı ön
           ödeme olarak alınır, kalan bakiye ise hareket tarihinden 15 gün önce
           ödenmelidir. Aksi takdirde tüketicinin geziye katılmaktan vazgeçtiği
           varsayılır ve gezi bedelinin % 100 ü cayma tazminatı olarak tüketiciye
@@ -34,14 +34,14 @@ export default function Hizmet() {
           üzere ,herhangi bir kesinti yapılmaksızın ödenen bedel tüketiciye aynen
           iade edilir.Yurt dışı seyahatlerde vize hizmeti alınmış ise iade
           edilmez.Tüketici ,gezinin başlamasına 30-15 gün kala tur bedelinin %
-          40’ını 15 günden az süre içerisinde ise tamamını Gezilab’a cayma tazminatı
+          40&apos;ını 15 günden az süre içerisinde ise tamamını Gezilab&apos;a cayma tazminatı
           olarak ödemeyi kabul ve taahhüt eder.
         </li>
         <li >
           Sözleşmeden dönülmesi halinde iptal ceza şartlarına göre en az 14 iş günü
           içerisinde Tüketicinin ödemiş olduğu tur bedeli Gezilab veya Aracısı
           tarafından iade edilir. Sözleşmeden dönülmesi halinde tüketiciye, yapmış
-          olduğu ödeme ‘’ aynı ‘’ şekilde, ödeme yapmış olduğu gün ki kur üzerinden
+          olduğu ödeme &apos;a aynı&apos; şekilde, ödeme yapmış olduğu gün ki kur üzerinden
           iade edilir.
         </li>
         <li >
@@ -84,7 +84,7 @@ export default function Hizmet() {
           Bu gibi iptallerde tüketiciye herhangi bir geri ödeme yapılmaz.
         </li>
         <li >
-          6."PROMOSYON" olarak belirtilen turlarımızda yukarıda belirtilen
+          6.&quot;PROMOSYON&quot; olarak belirtilen turlarımızda yukarıda belirtilen
           iptal/iade koşulları geçerli olmayıp, iptal veya değişiklik imkanı
           bulunmamaktadır.
         </li>
@@ -112,14 +112,12 @@ export default function Hizmet() {
         </li>
         <li >
           Kesilmiş Feribot biletlerinde iptal – iade işlemi bulunmamaktadır ancak
-          sefer saatinden 1 hafta önce bildirmek koşulu ile ‘’6 ay ‘’ içerisinde 1
-          kez açığa alma hakkı bulunmaktadır. Ücret iadesi talepleri Feribot firması
-          tarafından kabul edilmemektedir.Alıcı işbu sözleşmeye göre satın aldığı
-          bileti ,satış onayından sonra hiçbir şekilde değiştirmeyeceğini ve iade
+          sefer saatinden 1 hafta önce bildirmek koşulu ile &apos;6 ay&apos; içerisinde 1
+          kez açığa alma hakkı bulunmaktadır. Ücret iadesi talepleri Feribot
           talep etmeyeceğini kabul ve taahhüt eder.
         </li>
         <li >
-          10-’Dünya Denizleri programlarımızda uçak bileti kesildiği günün gece
+          10-&apos;Dünya Denizleri programlarımızda uçak bileti kesildiği günün gece
           yarısından itibaren iptal –iade edilemez.Otel ve transfer hizmetleri ise
           30 gün kalaya kadar % 100 cezaya girmekte olup iade edilemez
         </li>
@@ -342,8 +340,8 @@ export default function Hizmet() {
           edebilecektir.
         </li>
         <li >
-          9. Otele ve gemiye varış günü odalar, saat 14.00'den önce tüketicilere
-          teslim edilmez. Otelden ayrılış günü tüketicilerin, en geç saat 10.00'a
+          9. Otele ve gemiye varış günü odalar, saat 14.00&apos;den önce tüketicilere
+          teslim edilmez. Otelden ayrılış günü tüketicilerin, en geç saat 10.00&apos;a
           kadar odalarını boşaltmaları gerekir. Üç kişilik odalarda ilave yatak
           standardı farklı olabilir.
         </li>
@@ -472,9 +470,9 @@ export default function Hizmet() {
           bu bilgilerimi değiştirmeyeceğimi ve meydana gelecek her türlü vergi ceza
           ve/veya zararın tarafıma /firmama ait olduğunu taahhüt ederim.
         </li>
-     
+
       </ol>
-      
+
 
 
     </div>

@@ -4,7 +4,7 @@ import Text from "@/components/text";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
-import { MapPinIcon, PlusIcon } from "lucide-react";
+import { MapPinIcon, } from "lucide-react";
 import styles from "@/styles/safearea.module.css";
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
@@ -55,9 +55,9 @@ const PopularDestinations = () => {
   return (
     <section className="space" id="trip-sec">
       <div className={cn(styles.safe_area, "relative z-2")}>
-        <div className="text-start flex flex-col items-center gap-2 mb-10">
-          <Text variant="handwriting" className="text-4xl">Popüler Rotalar</Text>
-          <Text variant="heading" className="text-center">En Gözde Rotalar</Text>
+        <div className="text-center flex flex-col items-center gap-2 mb-10">
+          <Text variant="handwriting">Popüler Rotalar</Text>
+          <Text variant="heading">En Gözde Rotalar</Text>
         </div>
         <Carousel
           plugins={[plugin.current]}
@@ -74,10 +74,10 @@ const PopularDestinations = () => {
         >
           <CarouselContent className="-ml-1">
             {destinations.map((dest, index) => (
-              <CarouselItem key={index} className="basis-1/4">
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 shrink-0">
                 <div className="p-1">
                   <Card className="shadow-xs rounded-4xl  overflow-hidden p-0 gap-3 hover:scale-[1.02] transition-all hover:duration-100 duration-300 cursor-pointer">
-                    <CardContent className="flex h-[2rem] items-center justify-center p-6 relative overflow-hidden  h-[12rem] rounded-t-4xl">
+                    <CardContent className="flex items-center justify-center p-6 relative overflow-hidden  h-[12rem] rounded-t-4xl">
                       <Image src={dest.image} alt={dest.title} fill className="object-cover" />
 
                     </CardContent>
@@ -89,10 +89,7 @@ const PopularDestinations = () => {
                       </div>
                       <div className="flex flex-row w-full items-baseline justify-between">
                         <Text variant="paragraphProminent" className="text-left me-auto text-primary">+{dest.tripCount} Gezi</Text>
-                      
-
                       </div>
-                    
                     </CardFooter>
                   </Card>
                 </div>
@@ -102,30 +99,11 @@ const PopularDestinations = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-
-     
       </div>
     </section>
   );
 };
 
-
-const DestinationCard = ({ image, title, tripCount, link }: { image: string, title: string, tripCount: string, link: string }) => (
-  <div className="col-xl-3 col-lg-4 col-md-6">
-    <div className="trip-box">
-      <div className="trip-box__img">
-        <img src={image} alt={`Görsel: ${title}`} />
-      </div>
-      <div className="trip-box__content">
-        <h2 className="trip-box__title box-title">
-          <i className="fas fa-location-dot"></i>{" "}
-          <a href={link}>{title}</a>
-        </h2>
-        <span className="trip-box__count">{tripCount}+</span>
-      </div>
-    </div>
-  </div>
-);
 
 
 

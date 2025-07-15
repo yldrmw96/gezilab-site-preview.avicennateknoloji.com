@@ -1,18 +1,16 @@
-import Spacer from "@/components/spacer";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/safearea.module.css";
 import Text from "@/components/text";
-import { 
-  NewspaperIcon, 
-  TrendingUpIcon, 
-  ClockIcon, 
-  TagIcon,
+import {
+  NewspaperIcon,
+  TrendingUpIcon,
+  ClockIcon,
   StarIcon,
   CalendarIcon,
   EyeIcon,
   SearchIcon
 } from "lucide-react";
-import { 
+import {
   Card,
   CardContent,
   CardDescription,
@@ -149,36 +147,46 @@ export default function TurizmHaberleriPage() {
 
   // Trend olan haberler
   const trendingNews = [
-    { title: "Yaz tatili rezervasyonları başladı",
+    {
+      title: "Yaz tatili rezervasyonları başladı",
       image: "https://www.yapi.com.tr/Uploads/HaberMedya/172489/e56d00fdc36645018773cb5e87843d30-480x268.jpg",
-      views: 3240 },
-    { title: "Erken rezervasyonda %40 indirim",
+      views: 3240
+    },
+    {
+      title: "Erken rezervasyonda %40 indirim",
       image: "https://www.turizmprojedergisi.com/resim/6757ee0d4c5c5+++%20shengen%20vizesi.jpg",
-      views: 2890 },
-    { title: "Karadeniz turları popüler",
+      views: 2890
+    },
+    {
+      title: "Karadeniz turları popüler",
       image: "https://www.turizmprojedergisi.com/resim/6757ee0d4c5c5+++%20shengen%20vizesi.jpg",
-      views: 2150 },
-    { title: "Wellness otellere yoğun talep",
+      views: 2150
+    },
+    {
+      title: "Wellness otellere yoğun talep",
       image: "https://www.turizmprojedergisi.com/resim/6757ee0d4c5c5+++%20shengen%20vizesi.jpg",
-      views: 1980 },
-    { title: "Gastronomi turları artıyor",
+      views: 1980
+    },
+    {
+      title: "Gastronomi turları artıyor",
       image: "https://www.turizmprojedergisi.com/resim/6757ee0d4c5c5+++%20shengen%20vizesi.jpg",
-      views: 1650 }
+      views: 1650
+    }
   ];
 
   return (
     <div className="flex flex-col">
       <section className={cn(styles.safe_area)}>
         {/* Hero Section */}
-       
+
 
         {/* Arama ve Filtre */}
         <div className="mb-8">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="relative flex-1 max-w-md max-sm:w-full">
               <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-              <Input 
-                placeholder="Haberlerde arama yapın..." 
+              <Input
+                placeholder="Haberlerde arama yapın..."
                 className="pl-10"
               />
             </div>
@@ -203,7 +211,7 @@ export default function TurizmHaberleriPage() {
             <StarIcon size={20} className="text-primary" />
             <Text variant="subheading" className="!m-0">Öne Çıkan Haberler</Text>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {featuredNews.map((news, index) => (
               <Link href={`/turizm-haberleri/p/${news.id}`} key={news.id}>
@@ -215,8 +223,8 @@ export default function TurizmHaberleriPage() {
                     "relative overflow-hidden",
                     index === 0 ? "h-80" : "h-48"
                   )}>
-                    <img 
-                      src={news.image || ""} 
+                    <img
+                      src={news.image || ""}
                       alt={news.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -266,15 +274,15 @@ export default function TurizmHaberleriPage() {
               <NewspaperIcon size={20} className="text-primary" />
               <Text variant="subheading" className="!m-0">Son Haberler</Text>
             </div>
-            
+
             <div className="space-y-6">
               {allNews.map((news) => (
                 <Link href={`/turizm-haberleri/p/${news.id}`} key={news.id}>
                   <Card className="overflow-hidden hover:shadow-lg border-none shadow-none bg-transparent p-0 transition-all duration-300 cursor-pointer group">
                     <div className="md:flex">
                       <div className="md:w-1/3 relative overflow-hidden">
-                        <img 
-                          src={news.image || "/img/normal/placeholder.jpg"} 
+                        <img
+                          src={news.image || "/img/normal/placeholder.jpg"}
                           alt={news.title}
                           className="w-full bg-accent h-48 md:h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
@@ -346,8 +354,8 @@ export default function TurizmHaberleriPage() {
                   <Link href="/turizm-haberleri" key={index}>
                     <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors">
 
-                      <img  src={news.image} className={`w-8 h-8  text-white rounded-full flex items-center justify-center text-sm font-bold bg-cover bg-center`} />
-                      
+                      <img src={news.image} className={`w-8 h-8  text-white rounded-full flex items-center justify-center text-sm font-bold bg-cover bg-center`} alt={news.title} />
+
                       <div className="flex-1">
                         <p className="text-sm font-medium line-clamp-2">{news.title}</p>
                         <div className="flex items-center gap-1 text-xs text-gray-500 mt-1">

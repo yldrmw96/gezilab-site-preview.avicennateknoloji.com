@@ -51,7 +51,6 @@
 //   return { isAllowed: true, reason: "site_running" };
 // }
 
-
 // async function getSiteStatus() {
 //   try {
 //     const pool = await getPool();
@@ -63,7 +62,7 @@
 //     return null;
 //   }
 // }
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 
 enum SiteStatus {
@@ -97,19 +96,27 @@ export async function POST(request: NextRequest) {
       message: "IP is allowed",
     });
   } catch (error) {
-    return NextResponse.json({ status: "error", message: "IP is not allowed" }, { status: 403 });
+    return NextResponse.json(
+      {
+        status: "error",
+        message: "IP is not allowed",
+        error: error instanceof Error ? error.message : "Unknown error",
+      },
+      { status: 403 }
+    );
   }
 }
 
 async function checkIpIsAllowedInDb(ip: string, siteStatus: SiteStatus) {
   // Query the ip_acl table for the given IP
   const { data: ipData, error } = await supabase
-    .from('ip_acl')
-    .select('status')
-    .eq('ip_address', ip)
+    .from("ip_acl")
+    .select("status")
+    .eq("ip_address", ip)
     .single();
-  console.log('ipData', ipData);
-  if (error && error.code !== 'PGRST116') { // PGRST116 is "no rows returned" error
+  console.log("ipData", ipData);
+  if (error && error.code !== "PGRST116") {
+    // PGRST116 is "no rows returned" error
     console.error("Error checking IP:", error);
   }
 
@@ -141,11 +148,7 @@ async function checkIpIsAllowedInDb(ip: string, siteStatus: SiteStatus) {
 async function getSiteStatus() {
   const siteId = process.env.SITE_UUID;
 
-  const { data, error } = await supabase
-    .from('site')
-    .select('status')
-    .eq('id', siteId)
-    .single();
+  const { data, error } = await supabase.from("site").select("status").eq("id", siteId).single();
 
   if (error) {
     console.error("Error fetching site status:", error);

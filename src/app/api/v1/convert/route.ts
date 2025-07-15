@@ -1,5 +1,5 @@
 // app/api/v1/convert/route.ts
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
@@ -7,9 +7,12 @@ export async function POST(request: Request) {
 
     // Validate input
     if (
-      typeof amount !== 'number' || isNaN(amount) ||
-      !from || typeof from !== 'string' ||
-      !to || typeof to !== 'string'
+      typeof amount !== "number" ||
+      isNaN(amount) ||
+      !from ||
+      typeof from !== "string" ||
+      !to ||
+      typeof to !== "string"
     ) {
       return NextResponse.json(
         { error: 'Missing or invalid "amount" (number), "from" (string), or "to" (string).' },
@@ -41,12 +44,8 @@ export async function POST(request: Request) {
 
     const converted = Number((amount * rate).toFixed(2));
     return NextResponse.json({ from: base, to: target, rate, converted });
-
   } catch (error) {
-    // console.error('Convert API Error:', error);
-    return NextResponse.json(
-      { error: 'Internal Server Error' },
-      { status: 500 }
-    );
+    console.error("Convert API Error:", error);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }

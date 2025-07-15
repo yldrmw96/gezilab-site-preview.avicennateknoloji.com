@@ -1,9 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase.config";
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
-    const { data, error } = await supabase.from("site").select("*").eq("id", process.env.SUPABASE_SITE_UUID).single();
+    const { data, error } = await supabase
+      .from("site")
+      .select("*")
+      .eq("id", process.env.SUPABASE_SITE_UUID)
+      .single();
     if (error) {
       throw error;
     }

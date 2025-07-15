@@ -1,6 +1,6 @@
 import { links } from "@/lib/links";
 
-export  const visas = [
+export const visas = [
   {
     id: 1,
     name: "Dubai Turistik Vize",
@@ -9,7 +9,7 @@ export  const visas = [
     path: links.visa("dubai-turistik-vize"),
   },
   {
-    id: 2,  
+    id: 2,
     name: "Rusya Turistik Vize",
     slug: "rusya-turistik-vize",
     image: "/img/visas/portrait-woman-visiting-luxurious-city-dubai_23-2151328510.jpg",
@@ -43,9 +43,9 @@ export  const visas = [
     image: "/img/visas/portrait-woman-visiting-luxurious-city-dubai_23-2151328510.jpg",
     path: links.visa("schengen-ululeri"),
   },
-];  
+];
 
-export const getCountries = async () => {
+export const getCountries = async (): Promise<typeof allCountries> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(allCountries);
@@ -96,7 +96,7 @@ export const allCountries = [
   },
 ];
 
-export const getVisas = async () => {
+export const getVisas = async (): Promise<any[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(visas);
@@ -104,14 +104,20 @@ export const getVisas = async () => {
   });
 };
 
-export const getVisaBySlug = async (slug: string) => {
-    const visas = await getVisas();
+export const getVisaBySlug = async (slug: string): Promise<any> => {
+  const visas = await getVisas();
+  if (visas) {
     return visas.find((vize: any) => vize.slug === slug);
+  }
+  return null;
 };
 
-export const getCountryBySlug = async (slug: string) => {
+export const getCountryBySlug = async (slug: string): Promise<any> => {
   const allCountries = await getCountries();
-  return allCountries.find((country: any) => country.slug === slug);
+  if (allCountries) {
+    return allCountries.find((country: any) => country.slug === slug);
+  }
+  return null;
 };
 
 export default getVisas;

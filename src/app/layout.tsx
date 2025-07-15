@@ -51,21 +51,9 @@ export const metadata: Metadata = {
   description: process.env.NEXT_PUBLIC_SITE_NAME
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: Readonly<LayoutProps>) {
-
-  const stringCatalog = await fetch(
-    process.env.NEXT_PUBLIC_API_URL + "/api/v1/string-catalog",
-    {
-      method: "POST",
-      credentials: 'include',
-      body: JSON.stringify({
-        site_id: process.env.NEXT_PUBLIC_SITE_ID,
-      }),
-    }
-  );
-
+}: Readonly<{ children: React.ReactNode }>) {
 
   return (
     <html
@@ -83,9 +71,7 @@ export default async function RootLayout({
         {children}
 
       </body>
-      <div className={"fixed grid  items-center justify-center  top-0 mt-2 left-1/2 -translate-x-1/2 w-[calc(100%-1rem)]  z-[99999] p-2 "}>
-       
-      </div>
+
     </html>
   );
 }

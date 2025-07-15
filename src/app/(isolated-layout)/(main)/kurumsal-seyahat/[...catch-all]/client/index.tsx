@@ -6,37 +6,28 @@ import safeArea from "@/styles/safearea.module.css";
 import Text from "@/components/text";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
-  PlaneIcon,
-  StampIcon,
-  BedIcon,
-  CarIcon,
-  TruckIcon,
-  ShipIcon,
-  PresentationIcon,
-  StarIcon,
   CheckIcon,
   ClockIcon,
   PhoneIcon,
   MailIcon,
-  MapPinIcon,
   UsersIcon,
   AwardIcon,
   HeadphonesIcon,
-  ShieldCheckIcon
+  ShieldCheckIcon,
+  PlaneIcon,
+  StampIcon,
+  BedIcon,
+  CarIcon,
+  StarIcon,
+  TruckIcon,
+  ShipIcon,
+  PresentationIcon
 } from "lucide-react";
 import { kurumsalSeyahatRoutes } from "@/lib/mock/navigation-menu/kurumsal-seyahat";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-interface KurumsalSeyahatPageProps {
-  params: {
-    "catch-all": string[];
-  };
-}
-
-// Hizmet detayları
 const serviceDetails = {
   "ucak-bileti": {
     title: "Uçak Bileti",
@@ -283,7 +274,7 @@ const serviceDetails = {
   }
 };
 
-export default function KurumsalSeyahatPageClient({slug}: {slug: string}) {
+export default function KurumsalSeyahatPageClient({ slug }: { slug: string }) {
 
   if (!slug || !serviceDetails[slug as keyof typeof serviceDetails]) {
     notFound();

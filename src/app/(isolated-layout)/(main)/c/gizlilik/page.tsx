@@ -29,7 +29,7 @@ export default function Gizlilik() {
         alınmaktadır. Bununla beraber iş sürecimizin sorunsuz ilerlemesi için
         müşteri bilgilerimizin saklanması ve kullanımı kısmen gereklidir.
         Hizmetlerin en iyi şekilde karşılanması için, işin tamamlanmasına yönelik
-        bilgiler gezilab'da saklanır ve gerektiğinde hizmetlerin ifası ile ilgili iş
+        bilgiler gezilab&apos;da saklanır ve gerektiğinde hizmetlerin ifası ile ilgili iş
         ortağımız firmalara verilir. Kişisel bilgiler 3. şahıslara kesinlikle
         iletilmemektedir. Ancak kişisel bilgilerinizi, hizmetlerimizi sağlamak,
         yasal yükümlülükleri yerine getirmek, gezilab kuralları ve politikalarını
@@ -55,12 +55,12 @@ export default function Gizlilik() {
         Gezilab’ın gerekli bilgi güvenliği önlemlerini almasına karşın,
         www.gezilab.com sitesine ve sisteme yapılan saldırılar sonucunda gizli
         bilgilerin zarar görmesi veya üçüncü kişilerin eline geçmesi durumunda,
-        gezilab’ın herhangi bir sorumluluğu olmayacaktır.
+        gezilab&apos;ın herhangi bir sorumluluğu olmayacaktır.
       </p>
       <p>
         Gezilab, işbu Gizlilik Politikası hükümlerini, dilediği zaman
         www.gezilab.com sitesinde yayınlamak suretiyle tek taraflı olarak
-        değiştirebilir. Gezilab’ın değişiklik yaptığı Gizlilik Politikası hükümleri,
+        değiştirebilir. Gezilab&apos;ın değişiklik yaptığı Gizlilik Politikası hükümleri,
         www.gezilab.com sitesinde yayınlandığı tarihte yürürlüğe girer.
       </p>
       <p>
@@ -100,18 +100,18 @@ export default function Gizlilik() {
       </p>
       <p>Çerez (Cookie) Kullanımı</p>
       <p>
-        Gizliliğinizin sağlanması bizim için önemli olup, Çerez Politikamız ("Çerez
-        Politikası") ile sizlerin kişisel bilgilerinizin gizliliğini korumak
+        Gizliliğinizin sağlanması bizim için önemli olup, Çerez Politikamız (&quot;Çerez
+        Politikası&quot;) ile sizlerin kişisel bilgilerinizin gizliliğini korumak
         amacıyla sistem ve internet altyapısı tarafımızdan en güvenilir seviyede
         tutularak, gerekli koruma sağlanmaktadır.
       </p>
       <p>Bilgilerin Doğrulanması ve Üyelikten Ayrılma</p>
       <p>
-        Müşteriler gezilab’da kendileri hakkında hangi bilgilerin saklanmış olduğunu
+        Müşteriler gezilab&apos;da kendileri hakkında hangi bilgilerin saklanmış olduğunu
         öğrenmek için ücretsiz olarak yazılı bilgi talep edebilirler. Olası
         düzeltmeler, engellemeler veya bilgilerin silinmesi hakkındaki talepleriniz
         - yasaların öngördüğü ölçüde - derhal işleme alınmaktadır. Bilgilerin
-        korunması ve güvenliği hakkında Gezilab'a sormak istediğiniz başka sorular
+        korunması ve güvenliği hakkında Gezilab&apos;a sormak istediğiniz başka sorular
         olursa, her zaman info@gezilab.com e-posta adresimizi kullanarak bize
         ulaşabilirsiniz.
       </p>
@@ -127,29 +127,29 @@ export default function Gizlilik() {
         <span className="col-start-2 row-start-3">:</span>
         <p className="col-start-3 row-start-1">
           <Link href="tel:03124197353" className="text-primary hover:underline font-semibold hover:underline-offset-4 flex items-center gap-2">{" "}0312 419 73 53
-          <ExternalLinkIcon
-            width={"1em"}
-            height={"1em"}
-            className="text-primary"
-          />
+            <ExternalLinkIcon
+              width={"1em"}
+              height={"1em"}
+              className="text-primary"
+            />
           </Link>
-          </p>
+        </p>
         <p className="col-start-3 row-start-2">
           <Link href="mailto:info@gezilab.com" className="text-primary hover:underline font-semibold hover:underline-offset-4 flex items-center gap-2">{" "}info@gezilab.com
-          <ExternalLinkIcon
-            width={"1em"}
-            height={"1em"}
-            className="text-primary"
-          />
+            <ExternalLinkIcon
+              width={"1em"}
+              height={"1em"}
+              className="text-primary"
+            />
           </Link>
         </p>
         <p className="col-start-3 row-start-3">
           <Link href="https://maps.app.goo.gl/1234567890" className="text-primary hover:underline font-semibold hover:underline-offset-4 flex items-center gap-2">{" "}Mustafa Kemal Mahallesi 2131. Sokak No:6/8 Çankaya/ANKARA
-          <ExternalLinkIcon
-            width={"1em"}
-            height={"1em"}
-            className="text-primary"
-          />
+            <ExternalLinkIcon
+              width={"1em"}
+              height={"1em"}
+              className="text-primary"
+            />
           </Link>
         </p>
       </div>

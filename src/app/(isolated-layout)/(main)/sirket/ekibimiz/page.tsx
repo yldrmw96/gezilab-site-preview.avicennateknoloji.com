@@ -1,7 +1,7 @@
 import Spacer from "@/components/spacer";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/safearea.module.css";
-import { 
+import {
   Card,
   CardContent,
   CardDescription,
@@ -109,7 +109,7 @@ export default function EkibimizPage() {
   return (
     <div className="flex flex-col">
       <Spacer />
-      <section className={cn(styles.safe_area)}>
+      <section className={cn(styles.safe_area, "max-w-screen-xl container mx-auto")}>
         <div className="flex flex-col items-center mb-10 text-center">
           <Text variant="handwriting">Bizimle Tanışın</Text>
           <Text variant="heading">Profesyonel Ekibimiz</Text>
@@ -152,13 +152,13 @@ export default function EkibimizPage() {
         {/* Ekip Üyeleri */}
         <div className="mb-6">
           <Text variant="subheading" className="mb-6 text-center">Uzman Kadromuz</Text>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen px-4">
             {teamMembers.map((member) => (
               <Card key={member.id} className="overflow-hidden hover:shadow-lg transition-shadow py-0 gap-3">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
+                  <img
+                    src={member.image}
+                    alt={member.name}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>

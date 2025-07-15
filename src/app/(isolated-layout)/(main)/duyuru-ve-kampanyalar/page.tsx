@@ -2,13 +2,13 @@ import Spacer from "@/components/spacer";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/safearea.module.css";
 import Text from "@/components/text";
-import { 
-  CalendarIcon, 
-  BadgePercentIcon, 
-  ClockIcon, 
+import {
+  CalendarIcon,
+  BadgePercentIcon,
+  ClockIcon,
   StarIcon
 } from "lucide-react";
-import { 
+import {
   Card,
   CardContent,
   CardDescription,
@@ -18,8 +18,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
-import {Image2} from "@/components/image2";
+import { Image2 } from "@/components/image2";
 
 export default function DuyuruVeKampanyalarPage() {
   // Kampanyalar verisi
@@ -129,7 +128,7 @@ export default function DuyuruVeKampanyalarPage() {
             <StarIcon size={20} className="text-primary" />
             <Text variant="subheading" className="!m-0">Öne Çıkan Fırsatlar</Text>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {campaigns
               .filter(campaign => campaign.featured)
@@ -137,11 +136,11 @@ export default function DuyuruVeKampanyalarPage() {
                 <Card key={campaign.id} variant="flat_nopadding" className="overflow-hidden hover:shadow-lg transition-all">
                   <div className="relative h-48 overflow-hidden">
                     <Image2
-                      src={campaign.image} 
+                      src={campaign.image}
                       alt={campaign.title}
                       fill
                       className="w-full h-full object-cover [&_img]:object-cover  rounded-4xl"
-                     
+
                     />
                     <div className="absolute top-3 left-3">
                       <Badge className="bg-primary text-white">{campaign.badge}</Badge>
@@ -161,8 +160,8 @@ export default function DuyuruVeKampanyalarPage() {
                       <CalendarIcon size={14} />
                       <span>Son tarih: {campaign.validUntil}</span>
                     </div>
-                    <Link 
-                      href={`/duyuru-ve-kampanyalar/${campaign.id}`} 
+                    <Link
+                      href={`/duyuru-ve-kampanyalar/${campaign.id}`}
                       className="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-primary/90 transition-colors"
                     >
                       Detaylar
@@ -179,13 +178,13 @@ export default function DuyuruVeKampanyalarPage() {
             <BadgePercentIcon size={20} className="text-primary" />
             <Text variant="subheading" className="!m-0">Tüm Kampanyalar</Text>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {campaigns.map((campaign) => (
               <Card key={campaign.id} variant="flat_nopadding" className="rounded-4xl overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <Image2
-                    src={campaign.image || "/img/normal/placeholder.jpg"} 
+                    src={campaign.image || "/img/normal/placeholder.jpg"}
                     alt={campaign.title}
                     className="w-full h-full object-cover [&_img]:object-cover rounded-4xl"
                     fill
@@ -208,8 +207,8 @@ export default function DuyuruVeKampanyalarPage() {
                     <CalendarIcon size={14} />
                     <span>Son tarih: {campaign.validUntil}</span>
                   </div>
-                  <Link 
-                    href={`/duyuru-ve-kampanyalar/${campaign.id}`} 
+                  <Link
+                    href={`/duyuru-ve-kampanyalar/${campaign.id}`}
                     className="bg-primary text-white px-3 py-1 rounded-md text-sm hover:bg-primary/90 transition-colors"
                   >
                     Detaylar
@@ -226,7 +225,7 @@ export default function DuyuruVeKampanyalarPage() {
             <ClockIcon size={20} className="text-primary" />
             <Text variant="subheading" className="!m-0">Son Duyurular</Text>
           </div>
-          
+
           <div className="grid grid-cols-1 gap-4">
             {announcements.map((announcement) => (
               <Card key={announcement.id} className="hover:shadow-md transition-all">
@@ -252,23 +251,23 @@ export default function DuyuruVeKampanyalarPage() {
         <div className="bg-accentp-8 rounded-xl mb-4 text-center">
           <Text variant="subheading" className="mb-2">Kampanyalardan Haberdar Olun</Text>
           <p className="text-gray-700 mb-6">E-posta bültenimize abone olarak en güncel fırsatlardan ilk siz haberdar olun.</p>
-          
+
           <div className="max-w-md mx-auto">
             <form className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="E-posta adresiniz" 
+              <input
+                type="email"
+                placeholder="E-posta adresiniz"
                 className="flex-1 px-4 py-2 rounded-l-md border focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-primary text-white px-4 py-2 rounded-r-md hover:bg-primary/90 transition-colors"
               >
                 Abone Ol
               </button>
             </form>
           </div>
-          
+
           <p className="text-xs text-gray-500 mt-4">
             Abone olarak <Link href="/c/gizlilik" className="text-primary hover:underline">Gizlilik Sözleşmesi</Link>ni kabul etmiş sayılırsınız.
           </p>

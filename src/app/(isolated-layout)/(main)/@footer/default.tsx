@@ -1,12 +1,12 @@
 
 import Copyright from "@/components/copyright";
 import Text from "@/components/text";
-import { memo } from "react";
 import styles from "@/styles/footer.module.css";
 import safeArea from "@/styles/safearea.module.css";
 import { cn } from "@/lib/utils";
 import layoutStyles from "@/styles/layout.module.css";
 import { getStrCatalogOnce } from "@/lib/getStrCatalogOnce";
+import Image from "next/image";
 
 export default async function Footer() {
   const stringCatalog = await getStrCatalogOnce();
@@ -22,7 +22,7 @@ export default async function Footer() {
 
           </Text>
           <a className="flex items-center gap-2 max-sm:mx-auto" href="https://www.tursab.org.tr/tr/ddsv" target="_blank">
-            <img height="60" width="auto" className="!h-[4em]" src="https://cdn.trav3l.net/www.gezgintur.com/images/logo/logo_1724239743.png" />
+            <Image height={60} width={100} className="!h-[4em]" src="https://cdn.trav3l.net/www.gezgintur.com/images/logo/logo_1724239743.png" alt="Gezilab" />
 
           </a>
         </div>

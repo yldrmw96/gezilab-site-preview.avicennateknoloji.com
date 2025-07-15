@@ -23,7 +23,7 @@ export default function AboutUs() {
               Uçak bileti, vize, otel rezervasyonu, araç kiralama ve transfer işlemlerinde uzman ekibimizle çözüm odaklı çalışıyoruz.
             </Text>
           </div>
-          <div className="  mt-6  rounded-lg mt-4">
+          <div className="rounded-lg mt-4">
             <div className="grid grid-cols-2 gap-4 ">
               <div className="flex items-start gap-3">
                 <PlaneIcon className="text-primary shrink-0  mt-1 text-[length:var(--service-icon-size)]" width={"1em"} height={"1em"} />

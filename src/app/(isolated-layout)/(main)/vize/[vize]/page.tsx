@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
@@ -17,8 +16,6 @@ import {
   TabsTrigger
 } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
-import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -28,19 +25,20 @@ import {
 } from "@/components/ui/accordion";
 
 import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Textarea } from "@/components/ui/textarea";
-import Link from "next/link";
 import { ArrowRightIcon } from "lucide-react";
-import Image from "next/image";
-import { links } from "@/lib/links";
+import Link from "next/link";
 import slugify from "react-slugify";
-export default async function VizePage({ params }: { params: { vize: string } }) {
-  const visa = await getVisaBySlug(params.vize);
-  const allVisas = await getVisas();
+import { links } from "@/lib/links";
+import { Checkbox } from "@/components/ui/checkbox";
 
-  // Mock data - gerçek projede API'den gelecektir
-  const visaDetails = {
+export const revalidate = 3600; // 1 saat
+export const dynamic = "force-static";
+
+
+
+function getVisaDetails(visa: any) {
+  return {
     title: visa?.name || "Vize Bilgileri",
     description: `${visa?.name} ile ilgili bilgiler, başvuru süreci, gerekli evraklar ve dikkat edilmesi gereken hususlar hakkında detaylı bilgiye aşağıdan ulaşabilirsiniz.`,
     warning: "Vize başvurularında randevulu sisteme geçildiği için başvuru işlemleriniz hemen ertesi gün yapılamayabilir. Lütfen sayfamızda belirtilen işlem sürelerinin, pasaportunuz işleme verildikten sonraki süreci kapsadığını unutmayınız.",
@@ -57,16 +55,35 @@ export default async function VizePage({ params }: { params: { vize: string } })
         question: "Vize başvurusunda otel rezervasyonu şart mı?",
         answer: "Evet, vize başvurusunda konaklama belgesi (otel rezervasyonu) gereklidir. Ancak bu rezervasyonu bizden de temin edebilirsiniz."
       },
-      {
-        question: "Vize başvurusu için önceden randevu almak gerekli mi?",
-        answer: "Evet, vize başvuruları için randevu sistemi bulunmaktadır. Randevu almadan başvuru yapılamamaktadır."
-      },
-      {
-        question: "Vize başvurusu için hangi evraklar gerekiyor?",
-        answer: "Vize başvurusu için gerekli evraklar: pasaport, fotoğraf, vize başvuru formu, uçak ve otel rezervasyonu ve diğer destekleyici belgelerdir."
-      },
     ]
   };
+}
+
+export async function generateStaticParams() {
+  const visas = await getVisas();
+  return visas.map((v) => ({ vize: v.slug }));
+}
+
+
+export async function generateMetadata({ params }: { params: Promise<{ vize: string }> }) {
+  const { vize } = await params;
+  const visa = await getVisaBySlug(vize);
+  return {
+    title: visa?.name || "Vize Bilgileri",
+    description: `${visa?.name} ile ilgili bilgiler ve başvuru süreci.`,
+  };
+}
+
+
+
+export default async function VizePage({ params }: { params: Promise<{ vize: string }> }) {
+
+  const { vize } = await params;
+  const visa = await getVisaBySlug(vize);
+  const allVisas = await getVisas();
+
+  // Mock data - gerçek projede API'den gelecektir
+  const visaDetails = getVisaDetails(visa);
 
   return (
     <div className={cn(safeArea.safe_area, "")}>
@@ -91,7 +108,7 @@ export default async function VizePage({ params }: { params: { vize: string } })
                       <div
                         className={cn(
                           "p-2 rounded-md transition-colors flex items-center gap-2",
-                          v.slug === params.vize
+                          v.slug === vize
                             ? "text-primary font-medium"
                             : "hover:bg-muted hover:underline"
                         )}
@@ -187,7 +204,7 @@ export default async function VizePage({ params }: { params: { vize: string } })
                     <div className="flex items-start gap-2">
                       <Checkbox id="kvkk" />
                       <label htmlFor="kvkk" className="text-sm">
-                        KVKK Aydınlatma Metni'ni okudum, onaylıyorum.
+                        KVKK Aydınlatma Metni&apos;ni okudum, onaylıyorum.
                       </label>
                     </div>
                   </div>
